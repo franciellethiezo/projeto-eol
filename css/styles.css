@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    background: none; 
+    border: none; 
+    font-weight: bold;
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-between
+{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.flex-column
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    height: 72px;
+}
+
+
+header .logo{
+    height: 100%;
+    
+}
+
+header .logo img {
+    width: 16em;
+}
+
+nav button{
+
+}
+
+nav a {
+    margin: 0 1em; 
+}
+
+nav #btn-cadastro {
+    background-color: var(--green);
+    padding: 8px 25px;
+    border-radius: 20px;
+}
+
+.btn-entrar
+{
+    padding: 0.45em 3em; 
+    font-size: 2em;
+    border-radius: 200px;
+    color: white;
+}
+
+.home img{
+    width: 26em;
+
+}
+
+.home texto{
+    text-align: center;
+
+}
+.home text h1{
+    line-height: 200%;
+}
+
+@media (max-width: 376px) {
+    
+    header .logo img {
+        width: 150px;
+    }
+}
+

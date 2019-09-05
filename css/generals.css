@@ -1,0 +1,26 @@
+button {
+    border: none; 
+    cursor: pointer; 
+}
+
+.btn-medium {
+    color: white; 
+    font-weight: bold; 
+    font-size: 15pt; 
+    width: 160px; 
+    height: 45px; 
+    border-radius: 200px; 
+}
+
+.btn-small {
+    color: white; 
+    font-weight: bold; 
+    font-size: 10pt; 
+    width: 130px; 
+    height: 30px; 
+    border-radius: 200px; 
+}
+
+.yellow {
+    background-color: var(--yellow); 
+}
