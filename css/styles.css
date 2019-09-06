@@ -41,19 +41,18 @@ header {
     height: 72px;
 }
 
-
 header .logo{
     height: 100%;
     
 }
 
 header .logo img {
-    width: 16em;
+    width: 13.5em;
 }
 
-nav button{
+/* nav button{
 
-}
+} */
 
 nav a {
     margin: 0 1em; 
@@ -68,12 +67,18 @@ nav #btn-cadastro {
 .btn-entrar
 {
     margin-top: 1.50em;
-    padding: 0.45em 3em; 
+    padding: 0.25em 3em; 
     font-size: 2em;
     border-radius: 200px;
     color: white;
 }
-
+.main-home{
+    height: 71.4vh;
+   
+}
+.home{
+    margin-top: 5em;
+}
 .home img{
     width: 26em;
 
@@ -107,12 +112,119 @@ footer .footer-icons{
     color: black;
     font-size: 1.70em;
 }
+/* inicio de teste */
+.nav-produto{
+    background-color: #F2C335;
+    height: 100vh;
+    width: 5vw;
+}
+
+.header-produto{
+    height: 30vh;
+    width: 94vw;
+    background-color: aquamarine;
+    
+}
+/* .main-produto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+.img-produto{
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+
+}
+.img-produto{
+    margin-bottom: 6.5em;
+}
+
+.img-principal img{
+    height: 30vh;
+}
+.img-small{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1em;
+}
+.img-small img{
+    height: 9vh;
+}
+
+.ponto-img{
+    margin: 1em;
+    margin-bottom: 10em;
+}
+.ponto{
+    width: 0.3em;
+    height: 0.3em;
+    background-color: black;
+    margin: 1em;
+   
+}
+
+.descricao-produto{
+    width: 30vw;
+    height: 35vh;
+    background-color: aquamarine;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.div-hr{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 
+/* Inicio do código para tablet */
+
+/* Codigo para header */
+@media (max-width: 768px) {
+    
+    header .logo img {
+        width: 11em;
+    }
+/* Codigo para pg home */
+    .home img{
+        width: 18em;
+    }
+    .main-home{
+        height: 66vh;
+    }
+    .text{
+        width: 16em;
+
+    }
+    .text h1{
+        font-size: 1.3em;
+    }
+    .text p{
+        font-size: 0.9em;
+    }
+    .btn-entrar{
+        margin-top: 1.50em;
+        padding: 0.3em 1.5em; 
+        font-size: 1em;
+        border-radius: 200px;
+        color: white;
+    }
+
+}
+
+/* Inicio do código para mobile */
 @media (max-width: 376px) {
     
     header .logo img {
-        width: 150px;
+        width: 6em;
     }
+    
 }
+
 
