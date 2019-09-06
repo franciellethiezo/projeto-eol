@@ -24,3 +24,30 @@ button {
 .yellow {
     background-color: var(--yellow); 
 }
+
+.purple {
+    background-color: var(--purple);
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-between
+{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.flex-column
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
