@@ -4,32 +4,6 @@
     font-weight: bold;
 }
 
-.purple {
-    background-color: var(--purple);
-}
-
-.flex-center
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.flex-between
-{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-
-.flex-column
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 header {
     height: 72px;
@@ -79,6 +53,7 @@ nav #btn-cadastro {
 .home text h1{
     line-height: 200%;
 }
+
 
 @media (max-width: 376px) {
     
