@@ -52,15 +52,15 @@ header .logo img {
 }
 
 main{
-    height: 90vh;
+    height: 81vh;
 }
 
 .box-log, .box-cad{
     width: 50%;
-    height: 72vh;
+    height: 75vh;
     background: #fff;
     box-shadow: 0em 0em 1.5em rgb(119, 118, 118);
-    width: 30em;
+    width: 30vw;
     border-radius: 15px;
 }
 .box-log, .box-cad img{
@@ -214,10 +214,23 @@ footer .footer-icons{
     font-weight: bold; 
 }
 
+@media (max-width: 768px) {
+    
+    .box-log, .box-cad {
+        width: 45vw;
+}
+    .d-box h2 {
+        font-size: 2.5em;
+        margin-top: 0.7em;
+}
+    
+}
 @media (max-width: 376px) {
     
-    header .logo img {
-        width: 150px;
-    }
+    .box-log, .box-cad {
+        width: 85vw;
+}
+
+
 }
 
