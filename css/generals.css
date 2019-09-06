@@ -51,3 +51,24 @@ button {
     align-items: center;
     flex-direction: column;
 }
+
+.flex-column-between
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-center {
+    background-position: center; 
+    background-size: cover; 
+}
+
+.info-box {
+    background-color: var(--yellow);
+    border-radius: 8px;
+    padding: 7px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
