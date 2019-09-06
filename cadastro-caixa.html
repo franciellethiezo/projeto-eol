@@ -5,32 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/generals.css">
-
+    <script defer src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/4d2153c583.js"></script>
+    <title>Cadastro</title>
+    
 </head>
 
 <body>
-    <section class="box-cad">
-        <div class="d-box flex-column">
-            <h2>Cadastre-se</h2>
-            <p>Para continuar, faça o cadastro no <span><img src="imgs/Logo Oficial.png" alt="logo"></span></p>
-            <form action="#" class="form-box flex-column">
-                <input type="text" name="nome" placeholder="Nome completo">
-                <input type="text" name="e-mail" placeholder="E-mail corporativo">
-                <input type="text" name="senha" placeholder="Senha">
-                <input type="text" name="confirmação" placeholder="Confirmação de senha">
-                <input type="text" name="telefone" placeholder="Telefone">
-                <button class=" purple btn-cad">Cadastre-se</button>
-
-            </form>
-            <p>já possui uma conta?</p>
-            <a href="#" class="lnk-entrar">entrar</a>
+    <header class="flex-between">
+        <div class="logo flex-center">
+            <img src="./imgs/Logo Oficial.png" alt="logo">
         </div>
-    </section>
+        <nav>
+            <a href="#"><button class="btn">Sobre nós</button></a>
+            <a href="#"><button class="btn">Como funciona?</button></a>
+            <a href="#"><button class="btn">Dúvidas</button></a>
+            <a href="#"><button class="btn" id="btn-cadastro">Cadastro</button></a>
+        </nav>
+    </header>
+    <main class="flex-center">
+        <section class="box-cad">
+            <div class="d-box flex-column">
+                <h2>Cadastre-se</h2>
+                <p>Para continuar, faça o cadastro no <span><img src="imgs/Logo Oficial.png" alt="logo"></span></p>
+                <form action="#" class="form-box flex-column">
+                    <input type="text" name="nome" placeholder="Nome completo">
+                    <input type="text" name="e-mail" placeholder="E-mail corporativo">
+                    <input type="text" name="senha" placeholder="Senha">
+                    <input type="text" name="confirmação" placeholder="Confirmação de senha">
+                    <input type="text" name="telefone" placeholder="Telefone">
+                    <button class=" purple btn-cad">Cadastre-se</button>
 
+                </form>
+                <p>já possui uma conta?</p>
+                <a href="#" class="lnk-entrar">entrar</a>
+            </div>
+        </section>
+    </main>
+    <footer class="flex-between">
+        <img class="flex-between" src="./imgs/logo-thoughtworks.png" alt="">
+        <div class="footer-links flex-center">
+            <a href="#">Termos de uso</a>
+            <a href="#">Termos de uso</a>
+            <div class="footer-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github-square"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

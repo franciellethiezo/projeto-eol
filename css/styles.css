@@ -22,6 +22,12 @@
     justify-content: space-between; 
     align-items: center;
 }
+.flex-around
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
 
 .flex-column
 {
@@ -45,9 +51,13 @@ header .logo img {
     width: 16em;
 }
 
+main{
+    height: 90vh;
+}
+
 .box-log, .box-cad{
     width: 50%;
-    height: 60%;
+    height: 72vh;
     background: #fff;
     box-shadow: 0em 0em 1.5em rgb(119, 118, 118);
     width: 30em;
@@ -58,7 +68,7 @@ header .logo img {
 }
 
 .d-box{
-    height: 30em;
+    height: 67vh;
 }
 
 .d-box h2{
@@ -121,6 +131,7 @@ nav #btn-cadastro {
 
 .btn-entrar
 {
+    margin-top: 1.50em;
     padding: 0.45em 3em; 
     font-size: 2em;
     border-radius: 200px;
@@ -152,13 +163,35 @@ nav #btn-cadastro {
 
 }
 
-.home texto{
-    text-align: center;
+.home .entrar{
+    width: 32vw;
+    text-align: left;
+    line-height: 150%;
+}
+.home .entrar h1{
+    line-height: 170%;
+}
 
+footer{
+    height: 4em;
+    background-color: #F2C335;
 }
-.home text h1{
-    line-height: 200%;
+
+footer img{
+    height: 3em;
 }
+footer .footer-links a{
+    padding: 0em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 0.8em;
+}
+footer .footer-icons{
+    color: black;
+    font-size: 1.70em;
+}
+
 
 .hr-log hr{
  width: 150px;
