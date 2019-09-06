@@ -1,7 +1,8 @@
 :root {
     --yellow: #FFD34D; 
     --green: #94EADB; 
-    --purple: #D76AD9; 
+    --purple: #D76AD9;
+    --grey: #A3A0A0; 
 }
 
 * {

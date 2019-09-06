@@ -24,3 +24,10 @@ button {
 .yellow {
     background-color: var(--yellow); 
 }
+
+.yellow-ball {
+    width: 10px;
+    height: 10px;
+    background: var(--yellow);
+}
+

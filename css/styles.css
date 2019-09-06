@@ -45,6 +45,66 @@ header .logo img {
     width: 16em;
 }
 
+.box-cad{
+    width: 50%;
+    height: 60%;
+    background: #fff;
+    box-shadow: 0em 0em 1.5em rgb(119, 118, 118);
+    width: 30em;
+    border-radius: 15px;
+}
+.box-cad img{
+    width: 3.5em;
+}
+
+.d-box{
+    height: 30em;
+}
+
+.d-box h2{
+    font-size: 3.5em;
+}
+
+#remind_input{
+    display: flex;
+    justify-content: flex-start;
+}
+.remind-box{
+    width: 100%;
+    font-size: 0.em;
+
+}
+
+.remind{
+    font-size: 0.7em;
+}
+
+.d-box a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+    font-size: 0.7em;
+}
+
+.form-box{
+
+}
+input{
+    padding: 0.4em;
+    margin: 0.5em;
+    width: 20em;
+    
+}
+
+#remind_input {
+    width: auto;
+    
+
+}
+input::placeholder{
+    color: #CBCBCB;
+}
+
 nav button{
 
 }
@@ -67,6 +127,26 @@ nav #btn-cadastro {
     color: white;
 }
 
+.btn-cad{ 
+    font-size: 1em;
+    border-radius: 200px;
+    color: white;
+    margin-top: 2em;
+    width: 8em;
+    height: 2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lnk-entrar{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #A3A0A0;
+  
+}
+
 .home img{
     width: 26em;
 
@@ -78,6 +158,27 @@ nav #btn-cadastro {
 }
 .home text h1{
     line-height: 200%;
+}
+
+.hr-log hr{
+ width: 150px;
+ margin: 0 10px;
+}
+
+.hr-log{
+    flex-direction: row;
+}
+
+.rambo{
+    height: 80px;
+    margin-top: 35px;
+
+}
+
+.hr-log p{
+    color: #A3A0A0;
+    text-transform: uppercase;
+    font-weight: bold; 
 }
 
 @media (max-width: 376px) {
