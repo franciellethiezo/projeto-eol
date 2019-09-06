@@ -4,6 +4,38 @@
     font-weight: bold;
 }
 
+.purple {
+    background-color: var(--purple);
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-between
+{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.flex-around
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.flex-column
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 header {
     height: 72px;
@@ -35,6 +67,7 @@ nav #btn-cadastro {
 
 .btn-entrar
 {
+    margin-top: 1.50em;
     padding: 0.45em 3em; 
     font-size: 2em;
     border-radius: 200px;
@@ -46,12 +79,33 @@ nav #btn-cadastro {
 
 }
 
-.home texto{
-    text-align: center;
-
+.home .entrar{
+    width: 32vw;
+    text-align: left;
+    line-height: 150%;
 }
-.home text h1{
-    line-height: 200%;
+.home .entrar h1{
+    line-height: 170%;
+}
+
+footer{
+    height: 4em;
+    background-color: #F2C335;
+}
+
+footer img{
+    height: 3em;
+}
+footer .footer-links a{
+    padding: 0em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 0.8em;
+}
+footer .footer-icons{
+    color: black;
+    font-size: 1.70em;
 }
 
 
