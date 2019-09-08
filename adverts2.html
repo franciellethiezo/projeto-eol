@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default - CodeXP</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/generals.css">
+    <link rel="stylesheet" href="./css/app-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body class="web-app">
+    <div class="dark-modal" id="dark-modal"></div>
+    <aside class="flex-column-between" id="aside-mobile">
+        <div class="top">
+            <div class="logo flex-center">
+                <img src="./imgs/logo.png" alt="">
+                <i class="fas fa-times" onclick="toggleAside()"></i>
+            </div>
+
+            <div class="icons flex-column">
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <i class="fas fa-bullhorn" id="megaphone"></i>
+                </div>
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <i class="fas fa-heart flex-center"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="far fa-handshake"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom flex-column">
+            <div class="profile flex-center">
+                <div class="img-profile"></div>
+            </div>
+            <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
+        </div>
+
+    </aside>
+
+    <nav class="mobile-nav flex-around">
+        <div class="hamburger-menu" onclick="toggleAside()">
+            <div class="line line-0"></div>
+            <div class="line line-1"></div>
+            <div class="line"></div>
+        </div>
+        <img class="logo" src="./imgs/logo.png" alt="">
+        <img src="./imgs/profile-square.png" alt="" class="profile">
+    </nav>
+
+    <main class="flex-column main">
+        <header class="flex-center">
+            <div class="wrap container">
+                <div class="title">
+                    <h1>
+                        <i class="fas fa-bullhorn" id="megaphone"></i>
+                        Anúncios
+                    </h1>
+                </div>
+
+                <div class="search">
+                    <div class="search-box flex-center">
+                        <input type="text" name="search_input" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-center sort-products">
+            <div class="wrap container">
+                <div class="sort-box flex-center">
+                    <button class="left">
+                        Preco Maximo
+                    </button>
+                    <button class="middle">
+                        Data
+                    </button>
+                    <button class="right">
+                        Preco Minimo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-row flex-center">
+            <div class="container wrap flex-between">
+                <button>
+                    Grid <i class="fas fa-grip-horizontal"></i>
+                </button>
+                <button>
+                    <i class="fas fa-cogs"></i> Filtrar
+                </button>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="top background-center">
+                <img src="./imgs/stars.png" alt="" class="stars">
+                <div class="price-box flex-center">R$ 1980.00</div>
+            </div>
+            <div class="bottom flex-between">
+                <div class="left">
+                    <h2>iPhone X</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                        asperioresLorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                        asperiores
+                    </p>
+                </div>
+                <div class="like flex-center">
+                    <i class="fas fa-heart flex-center"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    const aside = document.getElementById('aside-mobile');
+    const darkModal = document.getElementById('dark-modal');
+    const toggleAside = () => {
+        darkModal.classList.toggle('show');
+        aside.classList.toggle('aside-show');
+    }
+</script>
