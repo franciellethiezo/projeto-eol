@@ -15,7 +15,46 @@
 </head>
 
 <body class="web-app">
-    <div class="dark-modal" id="dark-modal"></div>
+    <div class="dark-modal flex-center" id="dark-modal">
+        <div class="modal-filter flex-column" id="filter-modal">
+            <div class="top flex-between">
+                <h2>Filtros</h2>
+                <i class="fas fa-times" onclick="toggleFilter()"></i>
+            </div>
+            <section class="filters flex-column">
+                <div class="price-filter">
+                    <h3>Price</h3>
+                    <div class="slide flex-column">
+                        <input type="range">
+                        <div class="price-ranges flex-between">
+                            <div class="price-box" id="left">R$ 1280.00</div>
+                            <div class="price-box" id="right">R$ 1920.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-filter ">
+                    <h3>Marcas</h3>
+                    <div class="brands ">
+                        <button class="show-btn">Dell</button>
+                        <button class="show-btn">Apple</button>
+                        <button class="show-btn">Others</button>
+                    </div>
+                </div>
+                <div class="state-filter ">
+                    <h3>Estado</h3>
+                    <div class="estados">
+                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="save-btn">
+
+                    <button class="save-filters" id="" onclick="toggleFilter()">Salvar Filtros</button>
+                </div>
+            </section>
+        </div>
+    </div>
     <aside class="flex-column-between" id="aside-mobile">
         <div class="top">
             <div class="logo flex-center">
@@ -95,33 +134,68 @@
 
         <div class="filter-row flex-center">
             <div class="container wrap flex-between">
-                <button>
+                <button id="grid-button">
                     Grid <i class="fas fa-grip-horizontal"></i>
                 </button>
-                <button>
+                <button id="filter-button" onclick="toggleFilter()">
                     <i class="fas fa-cogs"></i> Filtrar
                 </button>
             </div>
         </div>
 
-        <div class="product-box">
-            <div class="top background-center">
-                <img src="./imgs/stars.png" alt="" class="stars">
-                <div class="price-box flex-center">R$ 1980.00</div>
-            </div>
-            <div class="bottom flex-between">
-                <div class="left">
-                    <h2>iPhone X</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                        asperioresLorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                        asperiores
-                    </p>
+        <section class="products-section flex-column">
+            <div class="product-box">
+                <div class="top background-center">
+                    <img src="./imgs/stars.png" alt="" class="stars">
+                    <div class="price-box flex-center">R$ 1980.00</div>
                 </div>
-                <div class="like flex-center">
-                    <i class="fas fa-heart flex-center"></i>
+                <div class="bottom flex-between">
+                    <div class="left">
+                        <h2>iPhone X</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="like flex-center">
+                        <i class="fas fa-heart flex-center"></i>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="product-box">
+                <div class="top background-center">
+                    <img src="./imgs/stars.png" alt="" class="stars">
+                    <div class="price-box flex-center">R$ 1980.00</div>
+                </div>
+                <div class="bottom flex-between">
+                    <div class="left">
+                        <h2>iPhone X</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="like flex-center">
+                        <i class="fas fa-heart flex-center"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="top background-center">
+                    <img src="./imgs/stars.png" alt="" class="stars">
+                    <div class="price-box flex-center">R$ 1980.00</div>
+                </div>
+                <div class="bottom flex-between">
+                    <div class="left">
+                        <h2>iPhone X</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="like flex-center">
+                        <i class="fas fa-heart flex-center"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
@@ -129,8 +203,15 @@
 <script>
     const aside = document.getElementById('aside-mobile');
     const darkModal = document.getElementById('dark-modal');
+    const filterModal = document.getElementById('filter-modal');
+
     const toggleAside = () => {
         darkModal.classList.toggle('show');
         aside.classList.toggle('aside-show');
+    }
+
+    const toggleFilter = () => {
+        darkModal.classList.toggle('show');
+        filterModal.classList.toggle('show');
     }
 </script>
