@@ -51,6 +51,18 @@ button {
     align-items: center;
 }
 
+.flex-evenly
+{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .flex-column
 {
     display: flex;
@@ -79,3 +91,333 @@ button {
     text-transform: capitalize;
     font-weight: bold;
 }
+
+.hamburger-menu .line {
+    height: 4px;
+    width: 30px; 
+    margin: 5px; 
+    background-color: black;
+}
+
+.hamburger-menu .line-0 {
+    width: 20px; 
+}
+
+.hamburger-menu .line-1 {
+    width: 25px; 
+}
+
+.dark-modal {
+    position: fixed;
+    display: none; 
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s; 
+    background-color: rgba(0, 0, 0, 0.356); 
+    z-index: 1000;
+}
+
+
+.modal-filter {
+    position: fixed; 
+    background-color: white; 
+    width: 90%;
+    height: 80%;
+    border-radius: 10px; 
+    display: none;
+    justify-content: flex-start;
+}
+
+.modal-filter .filters {
+    overflow: auto;
+    justify-content: flex-start;
+}
+
+.modal-filter .top {
+    margin-top: 10px;
+    width: 90%; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.modal-filter .top h2 {
+    font-size: 1.5rem;
+}
+
+.modal-filter .filters {
+    width: 100%; 
+}
+
+.modal-filter .price-filter {
+    width:80%;
+    margin-top:20px; 
+}
+
+.modal-filter .price-ranges {
+    margin-top: 10px;
+}
+
+.modal-filter .slide input {
+    margin: 10px; 
+   width: 80%; 
+}
+
+.modal-filter .price-ranges {
+    color: white; 
+    width: 95%;
+}
+
+.modal-filter .price-ranges #left {
+    background-color: var(--red); 
+}
+
+.modal-filter .price-ranges #right {
+    background-color: var(--purple); 
+}
+
+.modal-filter .price-filter .price-box {
+    position:inherit; 
+    width: 120px;
+    height: 40px; 
+}
+
+.brand-filter {
+    margin-top: 35px; 
+    width: 80%;
+}
+
+.brand-filter .brands {
+    flex-wrap: wrap; 
+    margin-top: 10px; 
+}
+
+.filters  button {
+    flex-basis: 70px;
+    margin: 5px 15px; 
+    font-size: 0.9rem; 
+    width: 100px;
+    height: 40px;
+}
+
+.filters  img {
+    width: 50%;
+    transform: rotate(-23deg);
+}
+
+.state-filter {
+    width: 80%;
+    margin-top: 30px; 
+}
+
+.state-filter .estados {
+    margin-top: 10px; 
+}
+
+.save-btn {
+    margin-top: 30px; 
+}
+
+.filters .save-filters {
+    color: white;
+    font-weight: bolder;
+    background-color: var(--red); 
+    height: 45px;
+    border-radius: 8px; 
+    width: 120px;
+}
+
+
+.show {
+    display: flex; 
+}
+
+#megaphone {
+    transform: rotate(-25deg); 
+}
+
+.container {
+    width: 100%; 
+    height: 100%; 
+}
+
+.wrap {
+    max-width: 330px; 
+}
+
+.product-box {
+    margin-top: 30px; 
+    height: 370px;
+    width: 95%; 
+    border-radius: 20px 20px 0px 0px; 
+    background-color: gray; 
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.452); 
+}
+
+.product-box .top {
+    background-image: url('../imgs/celofone.png');
+    border-radius: 20px 20px 0px 0px; 
+    margin: -2px; 
+    height: 65%;
+    position: relative; 
+}
+
+.product-box .top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px; 
+    margin-top: -2px;
+}
+
+.product-box .top .stars {
+    width: 80px; 
+    height: auto;
+    right: 3px;
+    top: 0px; 
+    position: absolute; 
+}
+
+.price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100px;
+    border-radius: 5px;
+    height: 15%;
+    font-weight: bolder; 
+    position: absolute; 
+    background-color: var(--yellow);
+    right: 10px;
+    bottom: 10px; 
+}
+
+.product-box .bottom {
+    align-items: flex-start; 
+    padding: 10px 20px 0px 20px
+}
+
+.product-box .bottom p {
+    font-size: 0.7rem; 
+}
+
+.product-box .bottom {
+    height: 35%; 
+    background-color: white;
+}
+
+.product-box .bottom i{
+    font-size: 3rem;
+}
+
+.product-box .bottom i:hover{
+    color:rgb(53, 53, 53); 
+    font-size: 3.1rem; 
+}
+
+.product-box .like {
+    height: 80%; 
+}
+
+.show-btn {
+    margin: 0 10px; 
+    font-size: 1.3rem;
+    font-weight: bolder; 
+    height: 45px; 
+    width: 120px;
+    background-color: transparent; 
+    border: 1px solid rgba(160, 160, 160, 0.363); 
+    border-radius: 8px; 
+}
+
+.show-btn:hover {
+    background-color: var(--purple); 
+    border: none; 
+    color: white; 
+}
+
+aside {
+    display: flex; 
+    width: 48px;
+    height: 100vh;
+    background-color: white;
+}
+
+aside .logo img {
+    width: 100%;
+    margin-top: 10px;  
+}
+
+aside .logo i {
+    display: none; 
+}
+
+aside .icons {
+    font-size: 23pt; 
+    margin-top: 10px; 
+}
+
+aside .icon-box {
+    cursor:pointer; 
+    width: 100%; 
+    height: 48px;
+    margin: 5px 0;
+}
+
+aside .icon-box:hover {
+    color: rgb(73, 73, 73);
+}
+
+aside .bottom {
+    font-size: 23pt; 
+}
+
+aside .thought-logo {
+    display: none; 
+    width: 110px; 
+}
+
+@media (max-width: 376px) {
+
+    aside {
+        position: fixed;
+        left: -110px; 
+        width: 110px; 
+        transition: left 0.3s; 
+        z-index: 1001;
+    }
+
+    aside .logo img{
+        display: none; 
+    }
+
+    aside .logo i {
+        display: block; 
+        margin-top: 10px;  
+        font-size: 28pt; 
+    }
+
+    aside .icons {
+        font-size: 28pt; 
+        margin-top: 26px; 
+    }
+
+    /* aside .bottom {
+        margin: 10px 0; 
+    }
+
+    #aside-mobile {
+        justify-content: flex-start;
+    } */
+
+    .aside-show {
+        display: flex; 
+        left: 0; 
+    }
+
+    aside .thought-logo {
+        display: block;
+        width: 115px; 
+        margin: 10px 0; 
+    }
+
+}
+
+
