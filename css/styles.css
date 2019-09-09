@@ -341,6 +341,11 @@ footer .footer-icons{
 
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
+
+    
+.cadastro-btn-cadastro{
+    display: none;
+}
     
     main{
         height: 85vh;
@@ -397,23 +402,19 @@ footer .footer-icons{
         flex-direction: column; 
     }
 
-    .home-header {
+    header {
         flex-direction: column; 
         height: 90px;
     }
 
-    .home-header nav a {
+    header nav a {
         margin: 0 5px; 
     }
 
-    .home-header nav #btn-cadastro {
+    header nav #btn-cadastro {
         padding: 8px 15px;
     }
 
 
 }   
 
-/* 
-#btn-cadastro{
-    display: none;
-} */
