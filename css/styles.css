@@ -112,24 +112,43 @@ footer .footer-icons{
     color: black;
     font-size: 1.70em;
 }
-/* inicio de teste */
+/* inicio do código para desktop - produtos */
 .nav-produto{
     background-color: #F2C335;
     height: 100vh;
     width: 5vw;
+    
 }
 
 .header-produto{
-    height: 30vh;
+    height: 5vh;
     width: 94vw;
-    background-color: aquamarine;
+   
     
 }
-/* .main-produto{
-    height: 100vh;
+.main-produto{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.side-left{
     display: flex;
     flex-direction: column;
-} */
+}
+
+.side-right{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-produto h1{
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 .img-produto{
     width: 40vw;
     height: 30vh;
@@ -157,6 +176,7 @@ footer .footer-icons{
 .ponto-img{
     margin: 1em;
     margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 .ponto{
     width: 0.3em;
@@ -167,21 +187,98 @@ footer .footer-icons{
 }
 
 .descricao-produto{
-    width: 30vw;
-    height: 35vh;
-    background-color: aquamarine;
+    width: 40vw;
+    height: 28vh;
+    padding: 0.5em;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     text-align: justify;
 }
 
-.div-hr{
+.bar-side{
+    height: 70vh;
+    width: 0.1vw;
+    background-color: #cccccc;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    align-items: flex-end;
+    margin-top: 7.2em;
+    box-shadow: 1px 1px 8px #525050;
+}
+.condicao, .marca, .formas-pgto, .interesse{
+    margin: 0.8em 0;
 }
 
+.botao-preco{
+    height: 8vh;
+    width: 13.5vw;
+    background-color: #FA738A;
+    font-size: 2em;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+.a-vista{
+    display: flex;
+    justify-content: flex-end;
+    width: 15vw;
+}
+.vista{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.botao-marca, .botao-condicao{
+    height: 3.5vh;
+    width: 5vw;
+    background-color: #805cff;
+    border-radius: 4px;
+}
+.botao-marca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8em;
+}
+.botao-condicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-condicao img{
+    height: 3.8vh;
+    width: 2.5vw;
+}
+.formas-pgto{
+    display: flex;
+    flex-direction: column;
+}
+.interesse{
+    height: 6vh;
+    width: 18.5vw;
+    border: solid 0.5px #707070;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.interesse p{
+    margin-left: 1em;
+    font-size: 1.3em;
+    color: #525050;
+}
+
+.fa-heart{
+    font-size: 2em;
+    color: red;
+}
 
 /* Inicio do código para tablet */
 
@@ -216,15 +313,148 @@ footer .footer-icons{
         color: white;
     }
 
+    /* media-query tablet de produto */
+    .header-produto{
+        height: 0.3em;
+    }
+
+    .nav-produto{
+        height: 100.7vh;
+    }
+
+    .botao-preco{
+        width: 24vw;
+    }
+    .descricao-produto{
+        font-size: 0.8em;
+        width: 40vw;
+        height: 25vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: justify;
+    }
+    .interesse {
+        height: 10vh;
+        width: 23.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .fa-heart{
+        padding-left: 0.5em;
+    }
+    .a-vista, .marca, .condicao, .formas-pgto, .interesse{
+    font-size: 0.8em;
+    }
+    .botao-condicao, .botao-marca{
+        width: 8vw;
+    }
+
+    .botao-condicao img{
+        width: 4.5vw;
+        height: 3vh;
+        margin-bottom: 1em;
+    }
+
+    .side-left{
+        height: 55vh;
+    }
+    .side-right{
+        height: 55vh;
+    }
+    /* final do media query tablet - produto */
 }
 
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
     
-    header .logo img {
-        width: 6em;
+    .main-home{
+        height: 89vh;
     }
-    
+    .footer-links{
+        display: none;
+    }
+
+    .home img{
+        width: 7em;
+        height: 8em;
+    }
+
+    .text p{
+        font-size: 0.75em;
+    }
+
+    /* Inicio do media query mobile - produtos */
+    .main-produto{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .main-produto h1{
+        margin-bottom: 3em;
+        font-size: 1.5em;
+       
+    }
+    /* .side-left{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .img-principal{
+        height: 26vh;
+    }
+    .img-produto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-small{
+        
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ponto-img{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .descricao-produto{
+        width: 70vw;
+    }
+    .bar-side{
+        width: 0;
+        height: 0;
+    }
+
+    .botao-preco{
+        width:38vw;
+        height: 5vh;
+    }
+    .botao-preco p{
+        font-size: 0.8em;
+    }
+
+    .side-right{
+        width: 70vw;
+        margin-top: 10em;
+    }
+    .interesse{
+        width: 20vh;
+    }    
+    .interesse p{
+        font-size: 0.8em;
+        padding: 0 0;
+    }
+    .a-vista{
+        display: flex;
+        flex-direction: row;
+    }
+    .vista{
+        font-size: 1em;
+    }
+
+    .nav-produto{
+        background-color: white;
+    }
 }
 
 

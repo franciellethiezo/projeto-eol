@@ -373,6 +373,10 @@ aside .thought-logo {
     display: none; 
     width: 110px; 
 }
+.web-app {
+    display: flex; 
+    height: 60vh;
+}
 
 @media (max-width: 376px) {
 
