@@ -43,6 +43,7 @@ header {
 
 header .logo{
     height: 100%;
+    margin-left: 10px; 
     
 }
 
@@ -154,13 +155,8 @@ nav #btn-cadastro {
   
 }
 
-.main-home{
-    height: 71.4vh;
-   
-}
-.home{
-    margin-top: 5em;
-}
+
+
 .home img{
     width: 26em;
 
@@ -193,7 +189,9 @@ footer .footer-links a{
 footer .footer-icons{
     color: black;
     font-size: 1.70em;
+    padding-right: 15px;
 }
+
 /* inicio de teste */
 .nav-produto{
     background-color: #F2C335;
@@ -281,33 +279,27 @@ footer .footer-icons{
 .roxo{
     background-color: var(--roxo);
 }
-@media (max-width: 768px) {
-    
-    .box-log, .box-cad {
-        width: 45vw;
-}
-    .d-box h2 {
-        font-size: 2.5em;
-        margin-top: 0.7em;
-}
-    
-    header .logo img{
-        width: 10em;
-    }
-
-}
-@media (max-width: 376px) {
-    
-    .box-log, .box-cad {
-        width: 85vw;
-}
-
-
 .div-hr{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+@media (max-width: 768px) {
+    
+    .box-log, .box-cad {
+        width: 45vw;
+    }
+    .d-box h2 {
+        font-size: 2.5em;
+        margin-top: 0.7em;
+    }
+    
+    header .logo img{
+        width: 9em;
+    }
+
+}
+
 
 
 /* Inicio do código para tablet */
@@ -322,9 +314,7 @@ footer .footer-icons{
     .home img{
         width: 18em;
     }
-    .main-home{
-        height: 66vh;
-    }
+
     .text{
         width: 16em;
 
@@ -343,6 +333,10 @@ footer .footer-icons{
         color: white;
     }
 
+    footer .footer-icons{
+        padding-right: 15px;
+    }
+
 }
 
 /* Inicio do código para mobile */
@@ -355,31 +349,71 @@ footer .footer-icons{
     header{
         margin-left: 10px;
     }
-
     header .logo img {
         width: 6em;
     }
-    
     .footer-links a{
         display: none;
     }
-    #btn-cadastro{
-        display: none;
+    .box-log, .box-cad {
+        width: 85vw;
+    }
+    .home img{
+        width: 12em;
     }
 
+    .div-hr{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
     .btn{
         align-content: center;
     }
-    
     footer .footer-icons{
         padding: 15px;
         font-size: 1.30em;
     }
-
     footer img{
         height: 6vh;
     }
+    .text{
+        width: 100%;
+    }
+    .text h1{
+        font-size: 1em;
+        text-align: center;
+    }
+    .text p{
+        font-size: 0.7em;
+        text-align: justify; 
+    }
+    .home .entrar{
+        width: 80vw;
+    }
+
+    .home{
+        flex-direction: column; 
+    }
+
+    .home-header {
+        flex-direction: column; 
+        height: 90px;
+    }
+
+    .home-header nav a {
+        margin: 0 5px; 
+    }
+
+    .home-header nav #btn-cadastro {
+        padding: 8px 15px;
+    }
+
 
 }   
 
-
+/* 
+#btn-cadastro{
+    display: none;
+} */
