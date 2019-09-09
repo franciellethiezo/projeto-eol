@@ -154,7 +154,28 @@ nav #btn-cadastro {
     color: #A3A0A0;
   
 }
+.hr-log{
+    flex-direction: row;
+}
 
+.rambo{
+    height: 80px;
+    margin-top: 35px;
+
+}
+
+.hr-log p{
+    color: #A3A0A0;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+.roxo{
+    background-color: var(--roxo);
+}
+.div-hr{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .home img{
@@ -335,33 +356,10 @@ footer .footer-icons{
     width: 2.5vw;
 }
 .formas-pgto{
-.hr-log hr{
  width: 10vw;
  margin: 0 10px;
 }
 
-.hr-log{
-    flex-direction: row;
-}
-
-.rambo{
-    height: 80px;
-    margin-top: 35px;
-
-}
-
-.hr-log p{
-    color: #A3A0A0;
-    text-transform: uppercase;
-    font-weight: bold; 
-}
-.roxo{
-    background-color: var(--roxo);
-}
-.div-hr{
-    display: flex;
-    flex-direction: column;
-}
 .interesse{
     height: 6vh;
     width: 18.5vw;
