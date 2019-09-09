@@ -8,6 +8,7 @@
     <title>Default - CodeXP</title>
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/generals.css">
+    <link rel="stylesheet" href="./css/generals-app.css">
     <link rel="stylesheet" href="./css/app-style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
@@ -34,18 +35,22 @@
                 </div>
                 <div class="brand-filter ">
                     <h3>Marcas</h3>
-                    <div class="brands ">
-                        <button class="show-btn">Dell</button>
-                        <button class="show-btn">Apple</button>
-                        <button class="show-btn">Others</button>
+                    <div class="brands-box flex-center">
+                        <div class="brands box-margin">
+                            <button class="show-btn">Dell</button>
+                            <button class="show-btn">Apple</button>
+                            <button class="show-btn">Others</button>
+                        </div>
                     </div>
                 </div>
-                <div class="state-filter ">
+                <div class="state-filter">
                     <h3>Estado</h3>
-                    <div class="estados">
-                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
-                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
-                        <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                    <div class="states-box flex-center">
+                        <div class="estados box-margin">
+                            <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                            <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                            <button class="show-btn"><img src="./imgs/stars.png" alt=""></button>
+                        </div>
                     </div>
                 </div>
                 <div class="save-btn">
@@ -80,123 +85,177 @@
 
         <div class="bottom flex-column">
             <div class="profile flex-center">
-                <div class="img-profile"></div>
+                <div class="img-profile background-center"></div>
             </div>
             <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
         </div>
 
     </aside>
 
-    <nav class="mobile-nav flex-around">
-        <div class="hamburger-menu" onclick="toggleAside()">
-            <div class="line line-0"></div>
-            <div class="line line-1"></div>
-            <div class="line"></div>
-        </div>
-        <img class="logo" src="./imgs/logo.png" alt="">
-        <img src="./imgs/profile-square.png" alt="" class="profile">
-    </nav>
-
-    <main class="flex-column main">
-        <header class="flex-center">
-            <div class="wrap container">
-                <div class="title">
-                    <h1>
-                        <i class="fas fa-bullhorn" id="megaphone"></i>
-                        Anúncios
-                    </h1>
+    <section class="app-page">
+        <nav class="mobile-nav flex-center">
+            <div class="wrap container flex-between">
+                <div class="hamburger-menu" onclick="toggleAside()">
+                    <div class="line line-0"></div>
+                    <div class="line line-1"></div>
+                    <div class="line"></div>
                 </div>
-
-                <div class="search">
-                    <div class="search-box flex-center">
-                        <input type="text" name="search_input" placeholder="Search">
-                        <i class="fas fa-search"></i>
+                <img class="logo" src="./imgs/logo.png" alt="">
+                <img src="./imgs/profile-square.png" alt="" class="profile">
+            </div>
+        </nav>
+    
+        <main class="flex-column main adverts">
+            <header class="flex-center">
+                <div class="wrap container">
+                    <div class="title">
+                        <h1>
+                            <i class="fas fa-bullhorn" id="megaphone"></i>
+                            Anúncios
+                        </h1>
+                    </div>
+    
+                    <div class="search">
+                        <div class="search-box flex-center">
+                            <input type="text" name="search_input" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+            <div class="middle-filters flex-column">
+                <div class="flex-center sort-products">
+                    <div class="wrap container">
+                        <div class="sort-box flex-center">
+                            <button class="left">
+                                Preco Maximo
+                            </button>
+                            <button class="middle">
+                                Data
+                            </button>
+                            <button class="right">
+                                Preco Minimo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="filter-row flex-center">
+                    <div class="container wrap flex-between">
+                        <button id="grid-button">
+                            Grid <i class="fas fa-grip-horizontal"></i>
+                        </button>
+                        <button id="filter-button" onclick="toggleFilter()">
+                            <i class="fas fa-cogs"></i> Filtrar
+                        </button>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <div class="flex-center sort-products">
-            <div class="wrap container">
-                <div class="sort-box flex-center">
-                    <button class="left">
-                        Preco Maximo
-                    </button>
-                    <button class="middle">
-                        Data
-                    </button>
-                    <button class="right">
-                        Preco Minimo
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="filter-row flex-center">
-            <div class="container wrap flex-between">
-                <button id="grid-button">
-                    Grid <i class="fas fa-grip-horizontal"></i>
-                </button>
-                <button id="filter-button" onclick="toggleFilter()">
-                    <i class="fas fa-cogs"></i> Filtrar
-                </button>
-            </div>
-        </div>
-
-        <section class="products-section flex-column">
-            <div class="product-box">
-                <div class="top background-center">
-                    <img src="./imgs/stars.png" alt="" class="stars">
-                    <div class="price-box flex-center">R$ 1980.00</div>
-                </div>
-                <div class="bottom flex-between">
-                    <div class="left">
-                        <h2>iPhone X</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+    
+            <section class="products-section flex-column">
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
                     </div>
-                    <div class="like flex-center">
-                        <i class="fas fa-heart flex-center"></i>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div>  
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product-box">
-                <div class="top background-center">
-                    <img src="./imgs/stars.png" alt="" class="stars">
-                    <div class="price-box flex-center">R$ 1980.00</div>
-                </div>
-                <div class="bottom flex-between">
-                    <div class="left">
-                        <h2>iPhone X</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
                     </div>
-                    <div class="like flex-center">
-                        <i class="fas fa-heart flex-center"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="top background-center">
-                    <img src="./imgs/stars.png" alt="" class="stars">
-                    <div class="price-box flex-center">R$ 1980.00</div>
-                </div>
-                <div class="bottom flex-between">
-                    <div class="left">
-                        <h2>iPhone X</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                            asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div class="like flex-center">
-                        <i class="fas fa-heart flex-center"></i>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </section>
 
 </body>
 
