@@ -1,32 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Default - CodeXP</title>
-        <link rel="stylesheet" href="./css/variables.css">
-        <link rel="stylesheet" href="./css/generals.css">
-        <link rel="stylesheet" href="./css/app-style.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
-        <script defer src="./js/script.js"></script>
 
-        <style>
-            aside {
-                height: 72px; 
-                background-color: var(--yellow); 
-            }
-        </style>
-    </head>
-    <body class="web-app">
-        <aside>
-            <div class="up">
-                
-            </div>
-            <div class="down">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default - CodeXP</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/generals.css">
+    <link rel="stylesheet" href="./css/app-style.css">
+    <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
+    <script defer src="./js/script.js"></script>
 
+    <style>
+        aside {
+            width: 72px;
+            height: 100vh;
+            background-color: var(--yellow);
+        }
+
+        aside .up {
+            margin-top: 20px;
+        }
+
+        aside .up img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+
+        aside .icons {
+            font-size: 2.2em;
+        }
+
+        aside .icons i {
+            color: black;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+
+        aside .icons i:hover,
+        aside .down i:hover {
+            color: rgb(53, 53, 53);
+        }
+
+        aside .profile .img-profile {
+            background-image: url('./imgs/profile-small.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 200px;
+        }
+
+        aside .down {
+            font-size: 2.2em;
+            color: black;
+        }
+
+        aside .down .profile {
+            margin: 10px 0px;
+        }
+
+        aside .profile {
+            width: 54px;
+            height: 54px;
+            border: 1px solid black;
+            border-radius: 200px;
+        }
+
+        aside .profile:hover {
+            background-color: rgba(255, 255, 255, 0.301);
+        }
+
+        aside .profile,
+        i {
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        header {
+            height: 72px;
+            width: 100%;
+        }
+
+        header .title {
+            font-size: 1.5em;
+        }
+
+        header .title span {
+            margin-right: 20px;
+        }
+
+        header .search {
+            position: relative;
+        }
+
+        header .search {
+            padding: 0 10px;
+            height: 36px;
+            border-radius: 200px;
+            border: 1px solid rgba(153, 153, 153, 0.603);
+        }
+
+
+        header .search input {
+            margin-top: 4px;
+            border: none;
+        }
+
+        header ::placeholder {
+            color: black;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .adverts-box {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        .adverts-box .order-box {
+            display: flex;
+        }
+
+        .order-box button {
+            font-weight: bold;
+            padding: 8px 10px;
+            background-color: rgba(218, 218, 218, 0.274);
+        }
+
+        .order-box #right {
+            border-radius: 0px 20px 20px 0px;
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .order-box #left {
+            border-radius: 20px 0px 0px 20px;
+            border-right: 1px solid rgba(0, 0, 0, 0.1)
+        }
+
+        .order-box #middle {
+            padding: 0px 20px;
+        }
+
+        .order-box button:hover {
+            background-color: rgba(136, 136, 136, 0.384);
+        }
+
+        .adverts-box .products {
+            height: 100%;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        .adverts-box .products-collection {
+            margin-top: 30px;
+        }
+
+        .products-collection .products-container {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .products-collection .product-box {
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px 30px 4px 4px;
+            box-shadow: 2px 1px 10px 2px #3333;
+            height: 300px;
+            width: 300px;
+            margin: 0px 10px;
+            justify-content: flex-start;
+        }
+
+        .products-collection .product-box:hover {
+            box-shadow: 5px 5px 10px 2px #3333;
+        }
+
+        .product-box .image {
+            border-radius: 30px 30px 4px 4px;
+            height: 170px;
+            width: 100%;
+            background-color: red;
+        }
+
+        .product-box .image {
+            position: relative;
+            background-image: url('./imgs/celofone.png');
+        }
+
+        .product-box .image .stars {
+            position: absolute;
+            top: -13px;
+            right: -10px;
+        }
+
+        .product-box .description {
+            position: relative;
+            padding: 10px;
+            border-radius: 30px 30px 4px 4px;
+            height: 130px;
+            font-size: 0.7rem;
+        }
+
+        .product-box .description .fa-heart {
+            position: absolute;
+            font-size: 4em;
+            bottom: 30px;
+            right: 20px;
+            transition: 0.3s color;
+        }
+
+        .product-box .description .fa-heart:hover {
+            color: var(--red);
+        }
+
+        .product-box .description p {
+            width: 80%;
+        }
+
+        .product-box .price {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+        }
+
+        .product-and-filter {
+            display: flex;
+        }
+
+        .price-filter input {
+            width: 100%;
+        }
+
+        .price-range .info-box {
+            padding: 7px 7px;
+        }
+
+        .price-range #left {
+            background-color: var(--red);
+        }
+
+        .filters {
+            width: 220px;
+            margin-top: 30px;
+        }
+
+
+        #megaphone {
+            transform: rotate(-20deg);
+        }
+
+        @media screen and (max-width: 1020px) {}
+    </style>
+</head>
+
+<body class="web-app ">
+    <aside class="flex-column-between">
+        <div class="up">
+            <img src="./imgs/logo.png" alt="">
+
+            <div class="icons flex-column">
+                <i class="fas fa-bullhorn" id="megaphone"></i>
+                <i class="fas fa-heart"></i>
+                <i class="far fa-handshake"></i>
+                <i class="fas fa-bell"></i>
             </div>
-        </aside>
-    </body>
+        </div>
+        <div class="down flex-column">
+            <i class="fas fa-question-circle"></i>
+            <div class="profile flex-center">
+                <div class="img-profile"></div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <header class="flex-between">
+            <div class="title">
+                <h1>
+                    <span>
+                        <i class="fas fa-bullhorn" id="megaphone"></i>
+                    </span>
+                    Anúncios
+                </h1>
+            </div>
+            <div class="search flex-center">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+        <section class="adverts-box">
+            <div class="products flex-column">
+                <div class="order-row">
+                    <div class="order-box">
+                        <button id="left">Maior Preço</button>
+                        <button id="middle">Data</button>
+                        <button id="right">Menor Preço</button>
+                    </div>
+                </div>
+
+                <div class="product-and-filter">
+                    <div class="products-collection ">
+                        <div class="products-container">
+                            <div class="product-box flex-column">
+                                <div class="image background-center">
+                                    <div class="stars">
+                                        <img src="./imgs/stars.png" alt="">
+                                    </div>
+                                    <div class="price info-box">
+                                        <div class="info-price">
+                                            r$ 1890.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h2>iPhone XR</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas sint minus
+                                        adipisci perferendis veniam! Magni, quibusdam aspernatur beatae obcaecati.</p>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                            </div>
+                            <div class="product-box flex-column">
+                                <div class="image background-center">
+                                    <div class="stars">
+                                        <img src="./imgs/stars.png" alt="">
+                                    </div>
+                                    <div class="price info-box">
+                                        <div class="info-price">
+                                            r$ 1890.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h2>iPhone XR</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas sint minus
+                                        adipisci perferendis veniam! Magni, quibusdam aspernatur beatae obcaecati.</p>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+
+                            </div>
+                            <div class="product-box flex-column">
+                                <div class="image background-center">
+                                    <div class="stars">
+                                        <img src="./imgs/stars.png" alt="">
+                                    </div>
+                                    <div class="price info-box">
+                                        <div class="info-price">
+                                            r$ 1890.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h2>iPhone XR</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas sint minus
+                                        adipisci perferendis veniam! Magni, quibusdam aspernatur beatae obcaecati.</p>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters">
+                        <div class="price-filter">
+                            <h3>Price</h3>
+                            <input type="range" name="" id="">
+                            <div class="price-range flex-between">
+                                <div class="info-box left flex-center"> r$ 1890.00 </div>
+                                <div class="info-box right flex-center">r$ 2980.00 </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
 </html>

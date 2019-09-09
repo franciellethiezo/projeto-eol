@@ -1,5 +1,137 @@
 body {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
     height: 100vh; 
+}
+
+.web-app {
+    display: flex; 
+}
+
+header h1 {
+    font-weight: bolder; 
+}
+
+
+@media (max-width: 376px) {
+    .web-app {
+        flex-direction: column; 
+    }
+
+
+    .mobile-nav {
+        height: 80px; 
+    }
+
+    .mobile-nav .profile {
+        width: 50px;
+        border-radius: 200px; 
+    }
+
+    .main {
+        justify-content: flex-start;
+        height: 80%; 
+    }
+
+    .main header {
+        margin-top: 30px; 
+        width: 100%;
+    }
+
+    .main .search {
+        margin-top: 20px; 
+    }
+
+    .main .search-box {
+        position: relative;
+        border: 1px solid rgb(58, 58, 58);
+        border-radius: 200px; 
+        padding-left: 10px; 
+        height: 40px; 
+    }
+
+    .main .search-box input{
+        border: none; 
+        height: 55%;
+        margin-top: 2px; 
+        width:90%; 
+    }
+
+    .main .search-box i {
+        font-size: 1.3rem; 
+        margin-right: 10px; 
+    }
+
+    .main .search-box ::placeholder{
+        font-weight: bolder; 
+        padding-top: 10px;
+        color:black; 
+        font-size: 1.2rem; 
+    }
+
+    .sort-box {
+        margin-top: 30px; 
+    }
+
+    .sort-products {
+        width: 100%; 
+    }
+
+    .sort-box button {
+        height: 100%;
+        letter-spacing: 0.6px;
+        font-weight: bolder; 
+        width: 130px; 
+        height: 45px;
+        background-color: rgb(243, 243, 243);
+        cursor:pointer; 
+    }
+
+    .sort-box button:hover {
+        background-color: rgb(226, 226, 226);
+    }
+
+    .sort-box .left {
+        border-radius: 20px 0px 0px 20px; 
+        padding-left: 8px 0px 0px 5px; 
+        border-right: 1px solid rgba(168, 168, 168, 0.459); 
+    }
+
+    .sort-box .middle {
+        width: 70px; 
+    }
+
+    .sort-box .right {
+        border-radius: 0px 20px 20px 0px; 
+        padding-right: 0px 10px 0px 5px; 
+        border-left: 1px solid rgba(168, 168, 168, 0.459); 
+    }
+
+    .filter-row {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .filter-row button {
+        margin: 0 10px; 
+        font-size: 1.3rem;
+        font-weight: bolder; 
+        height: 45px; 
+        width: 120px;
+        background-color: transparent; 
+        border: 1px solid rgba(160, 160, 160, 0.363); 
+        border-radius: 8px; 
+    }
+
+    .filter-row i {
+        margin: 5px; 
+    }
+
+    .filter-row button:hover {
+        background-color: var(--purple); 
+        border: none; 
+        color: white; 
+    }
+
+    
+
 }

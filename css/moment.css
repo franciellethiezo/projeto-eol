@@ -1,0 +1,61 @@
+main {
+    flex-grow: 1;
+}
+
+main .h-profile {
+    font-size: 1.2em; 
+    font-weight: bolder; 
+    padding: 40px 40px; 
+
+}
+
+main .h-profile span {
+    font-size: 1.3em; 
+}
+
+.s-profile .box-image
+{
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.s-profile .image
+{
+    background-image: url("../imgs/profile.png");
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+.light-info
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.profile-box
+{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.row {
+    margin: 20px 0;
+}
+
+.light-info button {
+    font-size: 0.8em; 
+    background-color: var(--yellow); 
+}
+
+.profile-box input {
+    width: 150px; 
+    height: 30px;
+    padding-left: 5px; 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219); 
+}
+
+.profile-box ::placeholder {
+    /* font-size: 1.5em; */
+}
