@@ -43,6 +43,7 @@ header {
 
 header .logo{
     height: 100%;
+    margin-left: 10px; 
     
 }
 
@@ -50,9 +51,70 @@ header .logo img {
     width: 13.5em;
 }
 
-/* nav button{
+main{
+    height: 81vh;
+}
 
-} */
+.box-log, .box-cad{
+    width: 50%;
+    height: 75vh;
+    background: #fff;
+    box-shadow: 0em 0em 1.5em rgb(119, 118, 118);
+    width: 30vw;
+    border-radius: 15px;
+}
+.box-log, .box-cad img{
+    width: 3.5em;
+}
+
+.d-box{
+    height: 67vh;
+}
+
+.d-box h2{
+    font-size: 3.5em;
+}
+
+#remind_input{
+    display: flex;
+    justify-content: flex-start;
+}
+.remind-box{
+    width: 100%;
+    font-size: 0.em;
+
+}
+
+.remind{
+    font-size: 0.7em;
+}
+
+.d-box a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+    font-size: 0.7em;
+}
+
+.form-box{
+}
+input{
+    padding: 0.4em;
+    margin: 0.5em;
+    width: 20em;
+    border: solid 1px black;
+
+}
+
+#remind_input {
+    width: auto;
+    
+
+}
+input::placeholder{
+    color: #CBCBCB;
+}
+
 
 nav a {
     margin: 0 1em; 
@@ -72,13 +134,29 @@ nav #btn-cadastro {
     border-radius: 200px;
     color: white;
 }
-.main-home{
-    height: 71.4vh;
-   
+
+.btn-log, .btn-cad{ 
+    font-size: 1em;
+    border-radius: 200px;
+    color: white;
+    margin-top: 2em;
+    width: 8em;
+    height: 2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.home{
-    margin-top: 5em;
+
+.lnk-entrar{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #A3A0A0;
+  
 }
+
+
+
 .home img{
     width: 26em;
 
@@ -111,8 +189,11 @@ footer .footer-links a{
 footer .footer-icons{
     color: black;
     font-size: 1.70em;
+    padding-right: 15px;
 }
 /* inicio do código para desktop - produtos */
+
+/* inicio de teste */
 .nav-produto{
     background-color: #F2C335;
     height: 100vh;
@@ -254,6 +335,30 @@ footer .footer-icons{
     width: 2.5vw;
 }
 .formas-pgto{
+.hr-log hr{
+ width: 10vw;
+ margin: 0 10px;
+}
+
+.hr-log{
+    flex-direction: row;
+}
+
+.rambo{
+    height: 80px;
+    margin-top: 35px;
+
+}
+
+.hr-log p{
+    color: #A3A0A0;
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+.roxo{
+    background-color: var(--roxo);
+}
+.div-hr{
     display: flex;
     flex-direction: column;
 }
@@ -268,6 +373,22 @@ footer .footer-icons{
     align-items: center;
     text-transform: uppercase;
 }
+@media (max-width: 768px) {
+    
+    .box-log, .box-cad {
+        width: 45vw;
+    }
+    .d-box h2 {
+        font-size: 2.5em;
+        margin-top: 0.7em;
+    }
+    
+    header .logo img{
+        width: 9em;
+    }
+
+}
+
 
 .interesse p{
     margin-left: 1em;
@@ -292,9 +413,7 @@ footer .footer-icons{
     .home img{
         width: 18em;
     }
-    .main-home{
-        height: 66vh;
-    }
+
     .text{
         width: 16em;
 
@@ -363,10 +482,19 @@ footer .footer-icons{
         height: 55vh;
     }
     /* final do media query tablet - produto */
+    footer .footer-icons{
+        padding-right: 15px;
+    }
+
 }
 
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
+
+    
+.cadastro-btn-cadastro{
+    display: none;
+}
     
     .main-home{
         height: 89vh;
@@ -456,5 +584,74 @@ footer .footer-icons{
         background-color: white;
     }
 }
+    main{
+        height: 85vh;
+    }
 
+    header{
+        margin-left: 10px;
+    }
+    header .logo img {
+        width: 6em;
+    }
+    .footer-links a{
+        display: none;
+    }
+    .box-log, .box-cad {
+        width: 85vw;
+    }
+    .home img{
+        width: 12em;
+    }
+
+    .div-hr{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .btn{
+        align-content: center;
+    }
+    footer .footer-icons{
+        padding: 15px;
+        font-size: 1.30em;
+    }
+    footer img{
+        height: 6vh;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h1{
+        font-size: 1em;
+        text-align: center;
+    }
+    .text p{
+        font-size: 0.7em;
+        text-align: justify; 
+    }
+    .home .entrar{
+        width: 80vw;
+    }
+
+    .home{
+        flex-direction: column; 
+    }
+
+    header {
+        flex-direction: column; 
+        height: 90px;
+    }
+
+    header nav a {
+        margin: 0 5px; 
+    }
+
+    header nav #btn-cadastro {
+        padding: 8px 15px;
+    }
+
+
+}   
 
