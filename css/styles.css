@@ -96,13 +96,13 @@ main{
 }
 
 .form-box{
-
 }
 input{
     padding: 0.4em;
     margin: 0.5em;
     width: 20em;
-    
+    border: solid 1px black;
+
 }
 
 #remind_input {
@@ -114,10 +114,6 @@ input::placeholder{
     color: #CBCBCB;
 }
 
-nav button{
-/* nav button{
-
-} */
 
 nav a {
     margin: 0 1em; 
@@ -137,7 +133,6 @@ nav #btn-cadastro {
     border-radius: 200px;
     color: white;
 }
-<<<<<<< HEAD
 
 .btn-log, .btn-cad{ 
     font-size: 1em;
@@ -159,7 +154,6 @@ nav #btn-cadastro {
   
 }
 
-=======
 .main-home{
     height: 71.4vh;
    
@@ -167,7 +161,6 @@ nav #btn-cadastro {
 .home{
     margin-top: 5em;
 }
->>>>>>> 8132d12e20b26cd088ee4ed372181ff653afb2fb
 .home img{
     width: 26em;
 
@@ -265,9 +258,8 @@ footer .footer-icons{
     text-align: justify;
 }
 
-<<<<<<< HEAD
 .hr-log hr{
- width: 150px;
+ width: 10vw;
  margin: 0 10px;
 }
 
@@ -286,7 +278,9 @@ footer .footer-icons{
     text-transform: uppercase;
     font-weight: bold; 
 }
-
+.roxo{
+    background-color: var(--roxo);
+}
 @media (max-width: 768px) {
     
     .box-log, .box-cad {
@@ -297,6 +291,10 @@ footer .footer-icons{
         margin-top: 0.7em;
 }
     
+    header .logo img{
+        width: 10em;
+    }
+
 }
 @media (max-width: 376px) {
     
@@ -305,7 +303,6 @@ footer .footer-icons{
 }
 
 
-=======
 .div-hr{
     display: flex;
     flex-direction: column;
@@ -351,11 +348,38 @@ footer .footer-icons{
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
     
+    main{
+        height: 85vh;
+    }
+
+    header{
+        margin-left: 10px;
+    }
+
     header .logo img {
         width: 6em;
     }
     
->>>>>>> 8132d12e20b26cd088ee4ed372181ff653afb2fb
-}
+    .footer-links a{
+        display: none;
+    }
+    #btn-cadastro{
+        display: none;
+    }
+
+    .btn{
+        align-content: center;
+    }
+    
+    footer .footer-icons{
+        padding: 15px;
+        font-size: 1.30em;
+    }
+
+    footer img{
+        height: 6vh;
+    }
+
+}   
 
 
