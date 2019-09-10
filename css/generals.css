@@ -367,13 +367,11 @@ aside .bottom {
 }
 
 aside .thought-logo {
-<<<<<<< HEAD
     display: none; 
     width: 110px; 
 }
 .web-app {
     display: flex; 
-    height: 60vh;
 }
 
 @media (max-width: 376px) {
@@ -420,8 +418,9 @@ aside .thought-logo {
         margin: 10px 0; 
     }
 
-=======
-    display: none;
-    width: 110px;
->>>>>>> 844e80142b52e64beecf3f323f25ff97ef137b08
+}
+
+
+.fix-star {
+    transform: rotate(-25deg);
 }
