@@ -367,6 +367,60 @@ aside .bottom {
 }
 
 aside .thought-logo {
-    display: none;
-    width: 110px;
+    display: none; 
+    width: 110px; 
+}
+.web-app {
+    display: flex; 
+}
+
+@media (max-width: 376px) {
+
+    aside {
+        position: fixed;
+        left: -110px; 
+        width: 110px; 
+        transition: left 0.3s; 
+        z-index: 1001;
+    }
+
+    aside .logo img{
+        display: none; 
+    }
+
+    aside .logo i {
+        display: block; 
+        margin-top: 10px;  
+        font-size: 28pt; 
+    }
+
+    aside .icons {
+        font-size: 28pt; 
+        margin-top: 26px; 
+    }
+
+    /* aside .bottom {
+        margin: 10px 0; 
+    }
+
+    #aside-mobile {
+        justify-content: flex-start;
+    } */
+
+    .aside-show {
+        display: flex; 
+        left: 0; 
+    }
+
+    aside .thought-logo {
+        display: block;
+        width: 115px; 
+        margin: 10px 0; 
+    }
+
+}
+
+
+.fix-star {
+    transform: rotate(-25deg);
 }

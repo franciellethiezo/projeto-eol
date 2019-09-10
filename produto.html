@@ -65,73 +65,83 @@
             </div>
         </nav>
 
-        <main>
-            <header class="titulo_perfil flex-center">
-                <h1 class="flex-align-center">
-                    <span><i class="far fa-user"></i></span>Perfil
-                </h1>
-                <div class="cont-img flex-space-evenly">
-                    <div class="image-profile background-center">
-                        <img src="./image/" alt="">
-                    </div>
+        <main class="main-produto">
+                <section class="side-left">
+                    <h1>MacBook Pro 13"</h1>
+                    <section class="img-produto">
+                        <div class="img-principal">
+                            <img src="./imgs/mac01.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está em pé e virado para frente.">
+                            <div class="ponto-img flex-center">
+                                <div class="ponto"></div>
+                                <div class="ponto"></div>
+                                <div class="ponto"></div>
+                            </div>
+                        </div>
+    
+                        <div class="img-small">
+                            <img src="./imgs/mac02.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado esquerdo.">
+                            <img src="./imgs/mac03.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado direito.">
+                        </div>
+    
+                    </section>
+    
+                    <section class="descricao-produto">
+                        <h2>Descrição do Produto</h2>
+                        <p>Modelo: MacBook Pro 13" </p>
+                        <p>Cor: Cinza </p>
+                        <p>Processador: Intel Core i5 </p>
+                        <p>Memória: RAM 8GB </p>
+                        <p>SSD: 128GB </p>
+                        <p>Dimensões aproximadas do produto (cm): 32,9x6,9x23,8 </p>
+                        <p>Peso líq. aproximado do produto (kg): 2,3kg </p>
+                        </p>
+                    </section>
+                </section>
                 </div>
-            </header>
-            <section class="up-info flex-justify-center">
-                <section class="info-dados flex-space-evenly">
-                    <div class="up-left flex-column">
-                        <div class="nome flex-direction-column">
-                            <label for="">Nome</label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div class="tel flex-direction-column">
-                            <label for="">Telefone</label>
-                            <input type="text" name="" id="">
+                <section class="side-right">
+    
+                    <div class="botao-preco">
+                        <p>R$ 1890,00</p>
+                    </div>
+                    <div class="a-vista">
+                        <p class="vista">À Vista</p>
+                    </div>
+                    <div class="marca-mobile">
+                    <div class="marca">
+                        <p>Marca:</p>
+                        <div class="botao-marca">
+                            <p>Apple</p>
                         </div>
                     </div>
-                    <div class="up-right flex-column">
-                        <div class="email flex-direction-column">
-                            <label for="">Email</label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div class="notif flex-direction-column">
-                            <div class="bb flex-align-center">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                                <p>Notificação A</p>
-                            </div>
-                            <div class="bb flex-align-center">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                                <p>Notificação B</p>
-                            </div>
+                    <div class="condicao">
+                        <p>Condição do produto:</p>
+                        <div class="botao-condicao">
+                            <img src="./imgs/stars.png" class="fix-star" alt="">
                         </div>
                     </div>
+                    </div>
+                    <div class="formas-pgto">
+                        <p>Formas de pagamento:</p>
+                        <div class=" flex-center" id="payment-check">
+                                <input type="radio" name="À Vista" class="payment-input" id=""> 
+                                <label for="À Vista">À Vista</label>
+                        </div>
+                        <div class=" flex-center" id="payment-check">
+                                <input class="payment-input" type="radio" name="Débito em folha" id=""> <label for="Débito">Débito em folha</label>
+                        </div>
+                        <div class="flex-center" id="payment-check">
+                                <input class="payment-input" type="radio" name="Depósito" id=""> <label for="Depósito">Depósito</label>
+                        </div>
+                    </div>
+    
+                    <button class="interesse">
+                        <i class="fas fa-heart" id="interesse-heart"></i>
+                        Tenho Interesse
+                    </button>
                 </section>
-            </section>
-            <div class="save-config flex-justify-align">
-                <input type="button" value="Salvar Configurações">
-            </div>
-            <hr>
-            <h2 id="change_pass">Alterar Senha</h2>
-            <section class="password flex-justify-center">
-                <section class="pass-data flex-space-evenly">
-                    <div class="new-pass flex-direction-column">
-                        <label for="">Nova Senha</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="confirm-pass flex-direction-column">
-                        <label for="">Confirme a Senha</label>
-                        <input type="text" name="" id="">
-                    </div>
-                </section>
-            </section>
-            <div class="save-config flex-justify-align">
-                <input type="button" value="Alterar Senha">
-            </div>
+    
+    
+            </main>
         </main>
     
         <!-- <main class="flex-column main adverts">
