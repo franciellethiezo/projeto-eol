@@ -14,11 +14,7 @@
 </head>
 
 <body class="web-app">
-    <nav class="nav-produto">
-
-    </nav>
     <main class="web">
-        <header class="web-header"></header>
         <header class="header-produto">
 
         </header>
@@ -28,7 +24,7 @@
                 <h1>MacBook Pro 13"</h1>
                 <section class="img-produto">
                     <div class="img-principal">
-                        <img src="./imgs/mac01.jpg" alt="">
+                        <img src="./imgs/mac01.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está em pé e virado para frente.">
                         <div class="ponto-img flex-center">
                             <div class="ponto"></div>
                             <div class="ponto"></div>
@@ -37,9 +33,8 @@
                     </div>
 
                     <div class="img-small">
-                        <img src="./imgs/mac02.jpg" alt="">
-                        <img src="./imgs/mac03.jpg" alt="">
-
+                        <img src="./imgs/mac02.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado esquerdo.">
+                        <img src="./imgs/mac03.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado direito.">
                     </div>
 
                 </section>
@@ -56,8 +51,6 @@
                     </p>
                 </section>
             </section>
-            <div class="bar-side">
-
             </div>
             <section class="side-right">
 
@@ -81,16 +74,23 @@
                 </div>
                 
                 <div class="formas-pgto">
-                        <p>Formas de pagamento:</p>
-                    <input type="radio" name="À Vista" id=""> <label for="À Vista">À Vista</label>
-                    <input type="radio" name="Débito em folha" id=""> <label for="Débito">Débito em folha</label>
-                    <input type="radio" name="Depósito" id=""> <label for="Depósito">Depósito</label>
+                    <p>Formas de pagamento:</p>
+                    <div class="payment-box flex-center">
+                            <input type="radio" name="À Vista" class="payment-input" id=""> 
+                            <label for="À Vista">À Vista</label>
+                    </div>
+                    <div class="payment-box flex-center">
+                            <input class="payment-input" type="radio" name="Débito em folha" id=""> <label for="Débito">Débito em folha</label>
+                    </div>
+                    <div class="payment-box flex-center">
+                            <input class="payment-input" type="radio" name="Depósito" id=""> <label for="Depósito">Depósito</label>
+                    </div>
                 </div>
 
-                <div class="interesse">
+                <button class="interesse">
                     <i class="fas fa-heart"></i>
-                    <p>Tenho Interesse</p>
-                </div>
+                    Tenho Interesse
+                </button>
             </section>
 
 

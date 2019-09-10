@@ -52,7 +52,6 @@ header .logo img {
 }
 
 main{
-    height: 81vh;
 }
 
 .box-log, .box-cad{
@@ -98,10 +97,10 @@ main{
 
 .form-box{
 }
-input{
+.payment-input{
     padding: 0.4em;
     margin: 0.5em;
-    width: 20em;
+    /* width: 20em; */
     border: solid 1px black;
 
 }
@@ -223,13 +222,15 @@ footer .footer-icons{
 }
 
 .header-produto{
-    height: 5vh;
+    height: 0vh;
     width: 94vw;
    
     
 }
 .main-produto{
-    height: 60vh;
+    /* height: 60vh; */
+    height: 95%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -238,6 +239,8 @@ footer .footer-icons{
 .side-left{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    overflow: auto;
 }
 
 .side-right{
@@ -311,6 +314,14 @@ footer .footer-icons{
     margin: 0.8em 0;
 }
 
+.side-right .interesse i {
+    margin-right: 10px; 
+}
+
+.side-right .interesse {
+    background: transparent; 
+}
+
 .botao-preco{
     height: 8vh;
     width: 13.5vw;
@@ -355,10 +366,22 @@ footer .footer-icons{
     height: 3.8vh;
     width: 2.5vw;
 }
+
 .formas-pgto{
- width: 10vw;
- margin: 0 10px;
-}
+    width: 130px;
+    margin: 0 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+   
+   }
+   
+   .payment-box {
+       width: 130px; 
+       justify-content: flex-start;
+   }
+
 
 .interesse{
     height: 6vh;
@@ -474,7 +497,7 @@ footer .footer-icons{
     }
 
     .side-left{
-        height: 55vh;
+        /* height: 55vh; */
     }
     .side-right{
         height: 55vh;
@@ -520,10 +543,6 @@ footer .footer-icons{
         font-size: 1.5em;
        
     }
-    /* .side-left{
-        display: flex;
-        flex-direction: column;
-    } */
 
     .img-principal{
         height: 26vh;
@@ -581,9 +600,8 @@ footer .footer-icons{
     .nav-produto{
         background-color: white;
     }
-}
+
     main{
-        height: 85vh;
     }
 
     header{
@@ -650,6 +668,13 @@ footer .footer-icons{
         padding: 8px 15px;
     }
 
+    .side-right {
+        display: none; 
+    }
+
+    .side-left {
+        width: 100%; 
+    }
 
 }   
 
