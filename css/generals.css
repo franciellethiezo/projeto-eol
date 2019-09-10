@@ -418,6 +418,9 @@ aside .thought-logo {
         margin: 10px 0; 
     }
 
-    display: none;
-    width: 110px;
+}
+
+
+.fix-star {
+    transform: rotate(-25deg);
 }

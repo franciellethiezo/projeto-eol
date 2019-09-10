@@ -377,7 +377,7 @@ footer .footer-icons{
    
    }
    
-   .payment-box {
+   #payment-check {
        width: 130px; 
        justify-content: flex-start;
    }
@@ -417,7 +417,7 @@ footer .footer-icons{
     color: #525050;
 }
 
-.fa-heart{
+#interesse-heart {
     font-size: 2em;
     color: red;
 }
@@ -534,24 +534,28 @@ footer .footer-icons{
     }
 
     /* Inicio do media query mobile - produtos */
+
     .main-produto{
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
     .main-produto h1{
         margin-bottom: 3em;
         font-size: 1.5em;
        
     }
-
-    .img-principal{
-        height: 26vh;
-    }
     .img-produto{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5em;
+        width: 100%; 
     }
+    .img-principal{
+        height: 26vh;
+    }
+  
     .img-small{
         
         flex-direction: row;
@@ -579,15 +583,35 @@ footer .footer-icons{
     }
 
     .side-right{
-        width: 70vw;
-        margin-top: 10em;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .marca-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+
+    }
+    .botao-marca{
+        width: 5em;
+    }
+    .botao-condicao{
+        width: 4em;
+        
+    }
+    .botao-condicao img{
+        width: 2em; 
+       
     }
     .interesse{
-        width: 20vh;
+        width: 30vh;
     }    
     .interesse p{
         font-size: 0.8em;
-        padding: 0 0;
+        /* padding: 0 0; */
     }
     .a-vista{
         display: flex;
@@ -600,9 +624,7 @@ footer .footer-icons{
     .nav-produto{
         background-color: white;
     }
-
-    main{
-    }
+/* Final do código para pg produtos */
 
     header{
         margin-left: 10px;
@@ -668,13 +690,20 @@ footer .footer-icons{
         padding: 8px 15px;
     }
 
-    .side-right {
-        display: none; 
-    }
-
     .side-left {
         width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
     }
 
 }   
 
+
+.payment-check {
+    justify-content: flex-start;
+}
+
+#app-page-produto {
+    width: 100%; 
+}
