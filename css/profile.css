@@ -24,20 +24,9 @@
     align-items: center;
 }
 
-body{
-    display: flex;
-    /* background-color: coral; */
-}
-
-/*#region ASIDE */
-
-
-
-/*#endregion */
-
 /* #region MAIN */
 
-main{
+.app-page main{
     width: 100%;
     height: 100%;
     margin: 2em 8em 1.5em 5em;
@@ -46,17 +35,17 @@ main{
 
 /* #region HEADER */
 
-header{
+.titulo_perfil header{
     width: 85%;
     height: 100%;
     /* background-color: red; */
 }
 
-header h1{
+.titulo_perfil header h1{
     font-size: 2.5em;
 }
 
-header h1 i{
+.titulo_perfil h1 i{
     font-size: 1em;
     margin-right: 0.30em;
 }
@@ -90,7 +79,7 @@ header h1 i{
 
 /* #region UP-INFO */
 
-main .info-dados{
+.app-page main .info-dados{
     width: 100%;
     height: 100%;
     /* background-color: green; */
