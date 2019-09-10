@@ -625,6 +625,10 @@ footer .footer-icons{
         background-color: white;
     }
 /* Final do código para pg produtos */
+    
+    main{
+        height: 85vh;
+    }
 
     header{
         margin-left: 10px;
