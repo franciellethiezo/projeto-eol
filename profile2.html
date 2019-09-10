@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/generals.css">
     <link rel="stylesheet" href="./css/generals-app.css">
     <link rel="stylesheet" href="./css/app-style.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
     <script defer src="./js/script.js"></script>
@@ -104,8 +105,77 @@
                 <img src="./imgs/profile-square.png" alt="" class="profile">
             </div>
         </nav>
+
+        <main>
+            <header class="flex-center">
+                <h1 class="flex-align-center">
+                    <span><i class="far fa-user"></i></span>Perfil
+                </h1>
+                <div class="cont-img flex-space-evenly">
+                    <div class="image-profile background-center">
+                        <img src="./image/" alt="">
+                    </div>
+                </div>
+            </header>
+            <section class="up-info flex-justify-center">
+                <section class="info-dados flex-space-evenly">
+                    <div class="up-left flex-column">
+                        <div class="nome flex-direction-column">
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="tel flex-direction-column">
+                            <label for="">Telefone</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div class="up-right flex-column">
+                        <div class="email flex-direction-column">
+                            <label for="">Email</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="aa flex-direction-column">
+                            <div class="bb flex-align-center">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notificação A</p>
+                            </div>
+                            <div class="bb flex-align-center">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notificação B</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="save-config flex-justify-align">
+                <input type="button" value="Salvar Configurações">
+            </div>
+            <hr>
+            <h2 id="change_pass">Alterar Senha</h2>
+            <section class="password flex-justify-center">
+                <section class="pass-data flex-space-evenly">
+                    <div class="new-pass flex-direction-column">
+                        <label for="">Nova Senha</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="confirm-pass flex-direction-column">
+                        <label for="">Confirme a Senha</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </section>
+            </section>
+            <div class="save-config flex-justify-align">
+                <input type="button" value="Alterar Senha">
+            </div>
+        </main>
     
-        <main class="flex-column main adverts">
+        <!-- <main class="flex-column main adverts">
             <header class="flex-center">
                 <div class="wrap container">
                     <div class="title">
@@ -254,7 +324,7 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </main> -->
     </section>
 
 </body>

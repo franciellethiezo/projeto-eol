@@ -10,8 +10,25 @@
     <link rel="stylesheet" href="./css/generals.css">
     <link rel="stylesheet" href="./css/app-style.css">
     <link rel="stylesheet" href="./css/moment.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
     <script defer src="./js/script.js"></script>
+
+    <script>
+        const aside = document.getElementById('aside-mobile');
+        const darkModal = document.getElementById('dark-modal');
+        const filterModal = document.getElementById('filter-modal');
+    
+        const toggleAside = () => {
+            darkModal.classList.toggle('show');
+            aside.classList.toggle('aside-show');
+        }
+    
+        const toggleFilter = () => {
+            darkModal.classList.toggle('show');
+            filterModal.classList.toggle('show');
+        }
+    </script>
 
     <style>
 
@@ -19,58 +36,77 @@
 </head>
 
 <body class="web-app">
-    <aside class="flex-column-between">
-        <div class="up">
-            <img src="./imgs/logo.png" alt="">
-
-            <div class="icons flex-column">
-                <i class="fas fa-bullhorn" id="megaphone"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-handshake"></i>
-                <i class="fas fa-bell"></i>
-            </div>
-        </div>
-        <div class="down flex-column">
-            <i class="fas fa-question-circle"></i>
-            <div class="profile flex-center">
-                <div class="img-profile"></div>
-            </div>
-        </div>
-    </aside>
+    
+    
     <main>
-        <header class="h-profile">
-            <h1>
-                <span>
-                    <i class="fas fa-user-circle"></i>
-                </span> Perfil
+        <header>
+            <h1 class="flex-align-center">
+                <span><i class="far fa-user"></i></span>Perfil
             </h1>
+            <div class="cont-img flex-space-evenly">
+                <div class="image-profile">
+                    <img src="./image/" alt="">
+                </div>
+            </div>
         </header>
-        <section class="s-profile">
-            <div class="row-image">
-                <div class="image background-center"></div>
-            </div>
-            <div class="light-info ">
-                <div class="row row-0 flex-between">
-                    <div class="name-box profile-box">
-                        <label for="name_input">Nome</label>
-                        <input type="text" placeholder="Nome">
+        <section class="up-info flex-justify-center">
+            <section class="info-dados flex-space-evenly">
+                <div class="up-left">
+                    <div class="nome flex-direction-column">
+                        <label for="">Nome</label>
+                        <input type="text" name="" id="">
                     </div>
-                    <div class="email-box profile-box">
-                        <label for="email-box">Email</label>
-                        <input type="text" placeholder="Nome">
+                    <div class="tel flex-direction-column">
+                        <label for="">Telefone</label>
+                        <input type="text" name="" id="">
                     </div>
                 </div>
-
-                <div class="row row-1 flex-between">
-                    <div class="tel-box profile-box">
-                        <label for="tel_input">Telefone</label>
-                        <input type="tel" placeholder="Nome">
+                <div class="up-right">
+                    <div class="email flex-direction-column">
+                        <label for="">Email</label>
+                        <input type="text" name="" id="">
                     </div>
-                    <button class=" btn-medium">Salvar Configurações</button>
+                    <div class="aa flex-direction-column">
+                        <div class="bb flex-align-center">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Notificação A</p>
+                        </div>
+                        <div class="bb flex-align-center">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Notificação B</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
+        <div class="save-config flex-justify-align">
+            <input type="button" value="Salvar Configurações">
+        </div>
         <hr>
+        <h2>Alterar Senha</h2>
+        <section class="password flex-justify-center">
+            <section class="pass-data flex-space-evenly">
+                <div class="new-pass flex-direction-column">
+                    <label for="">Nova Senha</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <div class="confirm-pass flex-direction-column">
+                        <label for="">Confirme a Senha</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="save-config flex-justify-align">
+            <input type="button" value="Alterar Senha">
+        </div>
     </main>
 </body>
 

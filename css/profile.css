@@ -1,0 +1,352 @@
+.flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-justify-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    /* background-color: coral; */
+}
+
+/*#region ASIDE */
+
+
+
+/*#endregion */
+
+/* #region MAIN */
+
+main{
+    width: 100%;
+    height: 100%;
+    margin: 2em 8em 1.5em 5em;
+    /* background-color: gray; */
+}
+
+/* #region HEADER */
+
+header{
+    width: 85%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+header h1{
+    font-size: 2.5em;
+}
+
+header h1 i{
+    font-size: 1em;
+    margin-right: 0.30em;
+}
+
+.cont-img{
+    /* background-color: blue; */
+    width: 35%;
+    margin-top: 0.625em;
+}
+
+.image-profile{
+    width: 7.5em;
+    height: 7.5em;
+    /* border: 0.25em solid black; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: url('../imgs/profile-small.jpg');
+    background-repeat: no-repeat; 
+}
+
+/* .image-profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0.25em solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+} */
+
+/* #endregion */
+
+/* #region UP-INFO */
+
+main .info-dados{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    margin-top: 1em;
+}
+
+label{
+    margin-left: 0.75em;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+
+input[type=text]{
+    padding: 0.3125em 0.9375em;
+    margin: 0.625em 0;
+    border: 0.0625em solid black;
+    border-radius: 0.625em;
+    box-sizing: border-box;
+    font-size: 0.875em;
+    color: black;
+    font-weight: normal;
+}
+
+input[type=button]{
+    color: white; 
+    font-weight: bold; 
+    font-size: 1em; 
+    border-radius: 12.5em;
+    background-color: var(--yellow);
+    border: 0.125em solid white;
+    padding: 0.5em 0.55em;
+    margin-top: 1em; 
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    
+}
+
+.save-config{
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: brown; */
+    margin: 1.875em 0;
+}
+
+.save-config input[type=button]{
+    margin: auto auto;
+}
+
+.bb{
+    margin-top: 1.5625em;
+}
+
+.bb p{
+    margin-left: 0.625em;
+}
+
+/* #region CHECKBOX */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75em;
+    height: 2.125em;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.625em;
+    width: 1.625em;
+    left: 0.25em;
+    bottom: 0.25em;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input[type=checkbox]:checked + .slider {
+    background-color: var(--yellow); 
+}
+  
+input[type=checkbox]:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input[type=checkbox]:checked + .slider:before {
+    -webkit-transform: translateX(1.625em);
+    -ms-transform: translateX(1.625em);
+    transform: translateX(1.625em);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 2.125em;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* #endregion CHECKBOX */
+
+/* #endregion */
+
+hr{
+    margin: 1em 0;
+    opacity: 0.55;
+}
+
+/* .alt-senha{
+    width: 58%;
+}
+
+.alt-senha h2{
+    width: 50%;
+    text-align: center;
+} */
+
+/* #region DOWN-SENHA */
+
+.pass-data{
+    display: flex;
+    width: 100%;
+}
+
+.app-page {
+    width: 100%; 
+}
+
+.app-page header {
+    height: auto;
+}
+
+.app-page main {
+    margin: 0;
+}
+
+.app-page .save-config {
+    margin: 1.25em 0;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+#change_pass {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 600px){
+    .cont-img{
+        /* background-color: blue; */
+        width: 70%;
+    }
+
+    .up-info .info-dados{
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: crimson; */
+    }
+
+    .info-dados .up-left{
+        width: 100%;
+    }
+
+    .info-dados .up-right{
+        width: 100%;
+    }
+
+    .save-config{
+        /* background-color: tomato; */
+        width: 100%;
+    }
+
+    .pass-data{
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: yellowgreen; */
+    }
+
+    .pass-data .new-pass{
+        width: 100%;
+    }
+
+    .pass-data .confirm-pass{
+        width: 100%;
+    }
+
+    /* .alt-senha{
+        width: 52%;
+    } */
+}
+
+@media screen and (max-width: 375px){
+    main{
+        margin: 1em 2em;
+    }
+    
+    .cont-img{
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    .up-info .info-dados{
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        /* background-color: crimson; */
+    }
+
+    .pass-data{
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        /* background-color: yellowgreen; */
+    }
+
+    .app-page header {
+        width: 100%; 
+        flex-direction: column; 
+    }
+
+    .app-page header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* .alt-senha{
+        width: 50%;
+    }
+
+    .alt-senha h2{
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 20px; 
+    } */
+}
