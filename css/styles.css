@@ -52,11 +52,12 @@ header .logo img {
 }
 
 main{
+    height: calc(100vh - 136px); 
 }
 
 .box-log, .box-cad{
     width: 50%;
-    height: 75vh;
+    height: 67vh;
     background: #fff;
     box-shadow: 0em 0em 1.5em rgb(119, 118, 118);
     width: 30vw;
@@ -80,8 +81,20 @@ main{
 }
 .remind-box{
     width: 100%;
-    font-size: 0.em;
+    margin-top: 10px; 
+    font-size: 1em;
 
+}
+
+.remind-box a {
+    margin-top: 5px; 
+}
+
+.form-box input {
+    border-radius: 8px; 
+    border: 1px solid rgba(0, 0, 0, 0.336); 
+    padding: 5px 5px; 
+    margin-top: 5px; 
 }
 
 .remind{
@@ -160,7 +173,6 @@ nav #btn-cadastro {
 
 .rambo{
     height: 80px;
-    margin-top: 35px;
 
 }
 
@@ -411,6 +423,10 @@ footer .footer-icons{
     color: black;
 }
 tr:nth-child(even) {background: #A3A0A0}
+
+.form-box {
+    margin-top: 20px; 
+}
 /* final da tela de adm*/
 @media (max-width: 768px) {
     
@@ -438,6 +454,14 @@ tr:nth-child(even) {background: #A3A0A0}
 #interesse-heart {
     font-size: 2em;
     color: red;
+}
+
+header {
+    padding: 0 60px; 
+}
+
+footer {
+    padding: 0 60px; 
 }
 
 /* Inicio do código para tablet */
@@ -525,6 +549,14 @@ tr:nth-child(even) {background: #A3A0A0}
         padding-right: 15px;
     }
 
+    header {
+        padding: 0 30px; 
+    }
+
+    footer {
+        padding: 0 30px; 
+    }
+
 }
 
 /* Inicio do código para mobile */
@@ -538,13 +570,10 @@ tr:nth-child(even) {background: #A3A0A0}
     .main-home{
         height: 89vh;
     }
-    .footer-links{
-        display: none;
-    }
+
 
     .home img{
         width: 7em;
-        height: 8em;
     }
 
     .text p{
@@ -702,6 +731,7 @@ tr:nth-child(even) {background: #A3A0A0}
     header {
         flex-direction: column; 
         height: 90px;
+        margin-left: 0; 
     }
 
     header nav a {
