@@ -12,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    outline: none; 
 }
 
 
@@ -855,8 +856,6 @@ footer .footer-icons{
     align-items: center;
 }
 .botao-condicao img{
-    height: 3.8vh;
-    width: 2.5vw;
 }
 
 .formas-pgto{
@@ -905,6 +904,10 @@ tr:nth-child(even) {background: #A3A0A0}
 
 .form-box {
     margin-top: 20px; 
+}
+
+.botao-condicao img {
+    width: 60%; 
 }
 /* final da tela de adm*/
 @media (max-width: 768px) {
@@ -1013,7 +1016,6 @@ footer {
 
     .botao-condicao img{
         width: 4.5vw;
-        height: 3vh;
         margin-bottom: 1em;
     }
 
@@ -1034,6 +1036,10 @@ footer {
 
     footer {
         padding: 0 30px; 
+    }
+
+    .botao-condicao img {
+        margin-top: 5px;
     }
 
 }
@@ -1127,7 +1133,7 @@ footer {
         display: flex;
         justify-content: center; 
         align-items: center; 
-        flex-direction: column; 
+        flex-direction: column;
     }
     .botao-marca{
         width: 5em;
@@ -1401,7 +1407,12 @@ header h1 {
 }
 
 
+.box-margin {
+    margin-left: 10px; 
+}
+
 @media (min-width: 765px) {
+
     .wrap {
         max-width: 698px; 
     }
@@ -1418,11 +1429,12 @@ header h1 {
     }
 
     .modal-filter {
-        width: 50%; 
+        width: 47%; 
     }
 
     .modal-filter .box-margin {
-        margin: 10px 0 0 11%
+    /* height: 3.8vh; */
+    margin: 10px 0 0 11%
     }
 
     .slide .price-ranges {
@@ -1546,6 +1558,14 @@ header h1 {
         width: 45px;
         border-radius: 200px;     
     }
+
+    .modal-filter .box-margin {
+        margin: 0; 
+    }
+
+    .box-margin {
+        margin: 0; 
+    }
 }
 
 
@@ -1587,4 +1607,12 @@ header h1 {
 #product-link {
     text-decoration: none; 
     color: black;
+}
+
+.icon-box .fa-heart {
+    padding: 0; 
+}
+
+.icon-box i {
+    color: black; 
 }
