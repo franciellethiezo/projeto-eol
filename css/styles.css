@@ -351,7 +351,7 @@ aside {
     display: flex;
     width: 48px;
     height: 100vh;
-    background-color: white;
+    background-color:#FFD34D;
 }
 
 aside .logo img {
@@ -733,7 +733,6 @@ footer .footer-icons{
     display: flex;
     flex-direction: column;
     height: 100%;
-    overflow: auto;
 }
 
 .side-right{
@@ -821,7 +820,7 @@ footer .footer-icons{
     background-color: #FA738A;
     font-size: 2em;
     color: white;
-    border-radius: 15px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1103,7 +1102,7 @@ footer {
 
     .botao-preco{
         width:38vw;
-        height: 5vh;
+        height: 7vh;
     }
     .botao-preco p{
         font-size: 0.8em;
@@ -1118,9 +1117,17 @@ footer {
 
     .marca-mobile{
         display: flex;
+        align-items: center; 
         flex-direction: column;
         justify-content: center; 
 
+    }
+
+    .marca-mobile .condicao {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
     }
     .botao-marca{
         width: 5em;
@@ -1128,6 +1135,10 @@ footer {
     .botao-condicao{
         width: 4em;
         
+    }
+
+    .botao-condicao img {
+        margin-top: 10px; 
     }
     .botao-condicao img{
         width: 2em; 
@@ -1542,12 +1553,14 @@ header h1 {
     display: none; 
 }
 
-.show {
-    display: flex; 
-}
 
 .modal-filter {
     display: none; 
+}
+
+
+.show {
+    display: flex; 
 }
 
 .app-header {
@@ -1571,3 +1584,7 @@ header h1 {
     width: auto; 
 }
 
+#product-link {
+    text-decoration: none; 
+    color: black;
+}

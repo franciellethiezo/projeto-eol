@@ -7,107 +7,299 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Default - CodeXP</title>
     <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/generals.css">
+    <link rel="stylesheet" href="./css/generals-app.css">
     <link rel="stylesheet" href="./css/app-style.css">
-    <link rel="stylesheet" href="./css/moment.css">
     <link rel="stylesheet" href="./css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
     <script defer src="./js/script.js"></script>
-
-    <script>
-        const aside = document.getElementById('aside-mobile');
-        const darkModal = document.getElementById('dark-modal');
-        const filterModal = document.getElementById('filter-modal');
-    
-        const toggleAside = () => {
-            darkModal.classList.toggle('show');
-            aside.classList.toggle('aside-show');
-        }
-    
-        const toggleFilter = () => {
-            darkModal.classList.toggle('show');
-            filterModal.classList.toggle('show');
-        }
-    </script>
-
-    <style>
-
-    </style>
 </head>
 
 <body class="web-app">
-    
-    
-    <main>
-        <header>
-            <h1 class="flex-align-center">
-                <span><i class="far fa-user"></i></span>Perfil
-            </h1>
-            <div class="cont-img flex-space-evenly">
-                <div class="image-profile">
-                    <img src="./image/" alt="">
+    <div class="dark-modal flex-center" id="dark-modal">
+    </div>
+    <aside class="flex-column-between" id="aside-mobile">
+        <div class="top">
+            <div class="logo flex-center">
+                <img src="./imgs/logo.png" alt="">
+                <i class="fas fa-times" onclick="toggleAside()"></i>
+            </div>
+
+            <div class="icons flex-column">
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <a href="./adverts.html"><i class="fas fa-bullhorn" id="megaphone"></i></a>
+                </div>
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <i class="fas fa-heart flex-center"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="far fa-handshake"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="fas fa-bell"></i>
                 </div>
             </div>
-        </header>
-        <section class="up-info flex-justify-center">
-            <section class="info-dados flex-space-evenly">
-                <div class="up-left">
-                    <div class="nome flex-direction-column">
-                        <label for="">Nome</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="tel flex-direction-column">
-                        <label for="">Telefone</label>
-                        <input type="text" name="" id="">
-                    </div>
-                </div>
-                <div class="up-right">
-                    <div class="email flex-direction-column">
-                        <label for="">Email</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="aa flex-direction-column">
-                        <div class="bb flex-align-center">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <p>Notificação A</p>
-                        </div>
-                        <div class="bb flex-align-center">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <p>Notificação B</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <div class="save-config flex-justify-align">
-            <input type="button" value="Salvar Configurações">
         </div>
-        <hr>
-        <h2>Alterar Senha</h2>
-        <section class="password flex-justify-center">
-            <section class="pass-data flex-space-evenly">
-                <div class="new-pass flex-direction-column">
-                    <label for="">Nova Senha</label>
-                    <input type="text" name="" id="">
+
+        <div class="bottom flex-column">
+            <div class="profile flex-center">
+                <div class="img-profile background-center"></div>
+            </div>
+            <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
+        </div>
+
+    </aside>
+
+    <section class="app-page" id="app-page-produto">
+        <nav class="mobile-nav flex-center">
+            <div class="wrap container flex-between">
+                <div class="hamburger-menu" onclick="toggleAside()">
+                    <div class="line line-0"></div>
+                    <div class="line line-1"></div>
+                    <div class="line"></div>
                 </div>
-                <div>
+                <img class="logo" src="./imgs/logo.png" alt="">
+                <img src="./imgs/profile-square.png" alt="" class="profile">
+            </div>
+        </nav>
+
+        <main>
+            <header class="titulo_perfil flex-center" id="header-perfil">
+                <h1 class="flex-align-center">
+                    <span><i class="far fa-user"></i></span>Perfil
+                </h1>
+                <div class="cont-img flex-space-evenly">
+                    <div class="image-profile background-center">
+                        <img src="./image/" alt="">
+                    </div>
+                </div>
+            </header>
+            <section class="up-info flex-justify-center">
+                <section class="info-dados flex-space-evenly">
+                    <div class="up-left flex-column">
+                        <div class="nome flex-direction-column">
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="tel flex-direction-column">
+                            <label for="">Telefone</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div class="up-right flex-column">
+                        <div class="email flex-direction-column">
+                            <label for="">Email</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="notif flex-direction-column">
+                            <div class="bb flex-align-center">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notificação A</p>
+                            </div>
+                            <div class="bb flex-align-center">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Notificação B</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="save-config flex-justify-align">
+                <input type="button" value="Salvar Configurações">
+            </div>
+            <hr>
+            <h2 id="change_pass">Alterar Senha</h2>
+            <section class="password flex-justify-center">
+                <section class="pass-data flex-space-evenly">
+                    <div class="new-pass flex-direction-column">
+                        <label for="">Nova Senha</label>
+                        <input type="text" name="" id="">
+                    </div>
                     <div class="confirm-pass flex-direction-column">
                         <label for="">Confirme a Senha</label>
                         <input type="text" name="" id="">
                     </div>
+                </section>
+            </section>
+            <div class="save-config flex-justify-align">
+                <input type="button" value="Alterar Senha">
+            </div>
+        </main>
+    
+        <!-- <main class="flex-column main adverts">
+            <header class="flex-center">
+                <div class="wrap container">
+                    <div class="title">
+                        <h1>
+                            <i class="fas fa-bullhorn" id="megaphone"></i>
+                            Anúncios
+                        </h1>
+                    </div>
+    
+                    <div class="search">
+                        <div class="search-box flex-center">
+                            <input type="text" name="search_input" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+            <div class="middle-filters flex-column">
+                <div class="flex-center sort-products">
+                    <div class="wrap container">
+                        <div class="sort-box flex-center">
+                            <button class="left">
+                                Preco Maximo
+                            </button>
+                            <button class="middle">
+                                Data
+                            </button>
+                            <button class="right">
+                                Preco Minimo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="filter-row flex-center">
+                    <div class="container wrap flex-between">
+                        <button id="grid-button">
+                            Grid <i class="fas fa-grip-horizontal"></i>
+                        </button>
+                        <button id="filter-button" onclick="toggleFilter()">
+                            <i class="fas fa-cogs"></i> Filtrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <section class="products-section flex-column">
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div> <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div>  
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="top background-center">
+                        <img src="./imgs/stars.png" alt="" class="stars">
+                        <div class="price-box flex-center">R$ 1980.00</div>
+                    </div>
+                    <div class="bottom flex-between">
+                        <div class="left">
+                            <h2>iPhone X</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
+                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="like flex-center">
+                            <i class="fas fa-heart flex-center"></i>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </section>
-        <div class="save-config flex-justify-align">
-            <input type="button" value="Alterar Senha">
-        </div>
-    </main>
+        </main> -->
+    </section>
+
 </body>
 
-</html>
+<script>
+    const aside = document.getElementById('aside-mobile');
+    const darkModal = document.getElementById('dark-modal');
+    const filterModal = document.getElementById('filter-modal');
+
+    const toggleAside = () => {
+        darkModal.classList.toggle('show');
+        aside.classList.toggle('aside-show');
+    }
+
+    const toggleFilter = () => {
+        darkModal.classList.toggle('show');
+        filterModal.classList.toggle('show');
+    }
+</script>

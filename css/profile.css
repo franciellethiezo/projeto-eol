@@ -62,7 +62,7 @@
     /* border: 0.25em solid black; */
     border-radius: 50%;
     box-sizing: border-box;
-    background-image: url('../imgs/profile-small.jpg');
+    background-image: url('../imgs/profile-square.png');
     background-repeat: no-repeat; 
 }
 
