@@ -39,6 +39,10 @@ button {
     border-radius: 200px;
 }
 
+.handle {
+    width: 100%; 
+}
+
 .yellow {
     background-color: var(--yellow);
 }
@@ -1047,6 +1051,9 @@ footer {
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
 
+#app-page-produto {
+    height: auto; 
+}
     
 .cadastro-btn-cadastro{
     display: none;
@@ -1466,6 +1473,14 @@ header h1 {
     .app-page-produto {
         display: block;
     }
+
+    .main-produto .sup {
+        display: flex; 
+    }
+
+    .main-produto .sup .img-box {
+        width: 100%; 
+    }
 }
 
 @media(min-width: 1000px) {
@@ -1566,6 +1581,9 @@ header h1 {
     .box-margin {
         margin: 0; 
     }
+    #app-page-produto {
+        height: 100vh;
+    }
 }
 
 
@@ -1592,10 +1610,6 @@ header h1 {
     height: auto;
 }
 
-#main-produto {
-    height: 87%; 
-}
-
 .img-produto {
     margin-bottom: 4.5em; 
 }
@@ -1615,4 +1629,107 @@ header h1 {
 
 .icon-box i {
     color: black; 
+}
+
+#app-page-produto {
+    overflow: auto; 
+}
+
+.main-produto {
+    overflow: auto; 
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.main-produto .thumb-nav img {
+    width: 70px; 
+}
+
+.main-produto .infos-box {
+    margin-top: 30px; 
+    width: 100%; 
+}
+
+.main-produto .infos-box h2 {
+    text-align: center; 
+    font-weight: bolder; 
+    margin: 0; 
+}
+
+.main-produto img {
+    width: 90%; 
+}
+
+.infos-box .filters, .infos-box h3 {
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 0; 
+    margin-bottom: 5px;   
+}
+
+.infos-box .filters {
+    margin-top: 20px; 
+    padding: 0 30px; 
+}
+
+.infos-box img {
+    width: 50px; 
+}
+
+.infos-box .filter {
+    margin-bottom: 20px; 
+}
+
+.infos-box .show-box {
+    width: 120px;
+    color: white;  
+    border-radius: 5px; 
+    height: 40px; 
+    background-color: #805CFF; 
+}
+
+.infos-box .payment {
+   padding: 0 30px; 
+}
+
+.infos-box .payment #form-stacked-select {
+    width: 100%; 
+}
+
+.main-produto .interest-box {
+    margin-top: 30px; 
+}
+
+.main-produto .sup {
+    width: 100%; 
+}
+
+.main-produto .interest {
+    border-radius: 4px;
+    font-weight: bolder; 
+    padding: 0 20px; 
+    width: 60%; 
+    height: 40px; 
+    background-color: var(--yellow); 
+}
+.tecnical-infos {
+    margin-top: 30px; 
+}
+
+.tecnical-infos .description, .tecnical-infos .tecnical {
+    padding: 0 30px; 
+}
+
+.tecnical-infos  h3{
+    font-weight: bolder; 
+}
+
+.tecnical-infos table tr {
+    font-weight: bolder; 
+    font-size: 0.8rem; 
+}
+
+.tecnical-infos table tr:nth-child(even) {
+    background-color: rgb(212, 212, 212); 
 }

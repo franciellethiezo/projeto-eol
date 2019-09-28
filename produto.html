@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./css/app-style.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
-    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
 </head>
 
 <body class="web-app">
@@ -66,237 +66,82 @@
         </nav>
 
         <main class="main-produto" id="main-produto">
-                <section class="side-left">
-                    <h1>MacBook Pro 13"</h1>
-                    <section class="img-produto">
-                        <div class="img-principal">
-                            <img src="./imgs/mac01.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está em pé e virado para frente.">
-                            <div class="ponto-img flex-center">
-                                <div class="ponto"></div>
-                                <div class="ponto"></div>
-                                <div class="ponto"></div>
+            <div class="sup">
+                <div class="img-box flex-center flex-column">
+                    <img src="./imgs/dell1.jpg" alt="">
+                    <div class="thumb-nav flex-between">
+                        <a href="#"><img src="imgs/mac01.jpg" width="100" alt=""></a>
+                        <a href="#"><img src="imgs/mac02.jpg" width="100" alt=""></a>
+                        <a href="#"><img src="imgs/mac03.jpg" width="100" alt=""></a>
+                    </div>
+                </div>
+                <div class="infos-box flex-center">
+                    <div class="handle">
+                        <h2>iPhone XR</h2>
+                        <h2>R$ 1890,00</h2>
+                        <div class="filters flex-between">
+                            <div class="filter">
+                                <h3>Marca</h3>
+                                <div class="show-box flex-center">Apple</div>
+                            </div>
+                            <div class="filter">
+                                <h3>Condição</h3>
+                                <div class="show-box flex-center"><img src="./imgs/stars.png" alt=""></div>
                             </div>
                         </div>
-    
-                        <div class="img-small">
-                            <img src="./imgs/mac02.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado esquerdo.">
-                            <img src="./imgs/mac03.jpg" alt="Imagem ilustrativa de um macbook, da marca Apple. O notebook está aberto e virado para o lado direito.">
+                        <div class="payment">
+                            <h3>Pagamento</h3>
+                            <select class="uk-select select" id="form-stacked-select">
+                                <option>Option 01</option>
+                                <option>Option 02</option>
+                            </select>
                         </div>
-    
-                    </section>
-    
-                    <section class="descricao-produto">
-                        <h2>Descrição do Produto</h2>
-                        <p>Modelo: MacBook Pro 13" </p>
-                        <p>Cor: Cinza </p>
-                        <p>Processador: Intel Core i5 </p>
-                        <p>Memória: RAM 8GB </p>
-                        <p>SSD: 128GB </p>
-                        <p>Dimensões aproximadas do produto (cm): 32,9x6,9x23,8 </p>
-                        <p>Peso líq. aproximado do produto (kg): 2,3kg </p>
-                        </p>
-                    </section>
-                </section>
-                </div>
-                <section class="side-right">
-    
-                    <div class="botao-preco">
-                        <p>R$ 1890,00</p>
-                    </div>
-                    <div class="a-vista">
-                        <p class="vista">À Vista</p>
-                    </div>
-                    <div class="marca-mobile">
-                    <div class="marca">
-                        <p>Marca:</p>
-                        <div class="botao-marca">
-                            <p>Apple</p>
+                        <div class="interest-box flex-center">
+                            <button class="interest"> <i class="fas fa-heart flex-center"></i> Tenho Interesse</button>
                         </div>
-                    </div>
-                    <div class="condicao">
-                        <p>Condição do produto:</p>
-                        <div class="botao-condicao">
-                            <img src="./imgs/stars.png" class="fix-star" alt="">
-                        </div>
-                    </div>
-                    </div>
-                    <p style="font-weight: bolder;">Formas de pagamento:</p>
-                    <div class="formas-pgto">
-                        <div class=" flex-center" id="payment-check">
-                                <input type="radio" name="À Vista" class="payment-input" id=""> 
-                                <label for="À Vista">À Vista</label>
-                        </div>
-                        <div class=" flex-center" id="payment-check">
-                                <input class="payment-input" type="radio" name="Débito em folha" id=""> <label for="Débito">Débito em folha</label>
-                        </div>
-                        <div class="flex-center" id="payment-check">
-                                <input class="payment-input" type="radio" name="Depósito" id=""> <label for="Depósito">Depósito</label>
-                        </div>
-                    </div>
-    
-                    <button class="interesse">
-                        <i class="fas fa-heart" id="interesse-heart"></i>
-                        Tenho Interesse
-                    </button>
-                </section>
-    
-    
-            </main>
-        </main>
-    
-        <!-- <main class="flex-column main adverts">
-            <header class="flex-center">
-                <div class="wrap container">
-                    <div class="title">
-                        <h1>
-                            <i class="fas fa-bullhorn" id="megaphone"></i>
-                            Anúncios
-                        </h1>
-                    </div>
-    
-                    <div class="search">
-                        <div class="search-box flex-center">
-                            <input type="text" name="search_input" placeholder="Search">
-                            <i class="fas fa-search"></i>
-                        </div>
-                    </div>
-                </div>
-            </header>
-    
-            <div class="middle-filters flex-column">
-                <div class="flex-center sort-products">
-                    <div class="wrap container">
-                        <div class="sort-box flex-center">
-                            <button class="left">
-                                Preco Maximo
-                            </button>
-                            <button class="middle">
-                                Data
-                            </button>
-                            <button class="right">
-                                Preco Minimo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="filter-row flex-center">
-                    <div class="container wrap flex-between">
-                        <button id="grid-button">
-                            Grid <i class="fas fa-grip-horizontal"></i>
-                        </button>
-                        <button id="filter-button" onclick="toggleFilter()">
-                            <i class="fas fa-cogs"></i> Filtrar
-                        </button>
                     </div>
                 </div>
             </div>
-    
-            <section class="products-section flex-column">
-                <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
-                </div> <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
-                </div> <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
-                </div> <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
-                </div>  
-                <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
+
+            <div class="tecnical-infos">
+                <div class="description">
+                    <h3>Descrição</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem similique sit eum,
+                        earum et consectetur consequatur inventore minus veniam laborum accusantium! Vel quos debitis
+                        quasi nostrum animi consequatur minima.
+                    </p>
                 </div>
-                <div class="product-box">
-                    <div class="top background-center">
-                        <img src="./imgs/stars.png" alt="" class="stars">
-                        <div class="price-box flex-center">R$ 1980.00</div>
-                    </div>
-                    <div class="bottom flex-between">
-                        <div class="left">
-                            <h2>iPhone X</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint perspiciatis dolorem
-                                asperioresLorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="like flex-center">
-                            <i class="fas fa-heart flex-center"></i>
-                        </div>
-                    </div>
+
+                <div class="tecnical">
+                    <h3>Ficha Técnica</h1>
+                        <table class="uk-table uk-table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>Código</td>
+                                    <td>213123213</td>
+                                </tr>
+                                <tr>
+                                    <td>Código de Barras</td>
+                                    <td>Table Data</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
                 </div>
-            </section>
-        </main> -->
+            </div>
+        </main>
     </section>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/b59fd58049.js"></script>
+<script defer src="./js/script.js"></script>
 
 <script>
     const aside = document.getElementById('aside-mobile');
