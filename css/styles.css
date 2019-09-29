@@ -39,10 +39,6 @@ button {
     border-radius: 200px;
 }
 
-.handle {
-    width: 100%; 
-}
-
 .yellow {
     background-color: var(--yellow);
 }
@@ -747,7 +743,7 @@ footer .footer-icons{
 }
 
 .main-produto h1{
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
@@ -776,9 +772,8 @@ footer .footer-icons{
 }
 
 .ponto-img{
-    margin: 1em;
-    margin-bottom: 10em;
-    margin-bottom: 5em;
+    display: flex;
+    margin: 4em;
 }
 .ponto{
     width: 0.3em;
@@ -950,6 +945,71 @@ footer {
     padding: 0 60px; 
 }
 
+/* Início da tela gerenciamento de produtos */
+.tabela-produto{
+    color: black;
+    width: 100vw;
+}
+
+.interface-gerenciamento-prod{
+    display: flex;
+    
+}
+
+.gerenc-prod-menu{
+    height: 8vh;
+    
+}
+.nav-prod-cad{
+    display: contents;
+}
+.uk-table {
+    margin-top: 0;
+}
+
+.btn-cadastrar-produto{
+    background-color: #fff;
+    padding: 8px 25px;
+    border-radius: 20px;
+border: 1px solid rgb(58, 58, 58);
+
+}
+.tabela-cadastro-prod{
+    margin-top: 0;
+}
+.img-cad-produto{
+    width: 11vw;
+}
+.tabela-cadastro-prod td{
+    vertical-align: middle;
+    padding: 0.5em 0.5em;
+}
+.uk-table-justify td:first-child, .uk-table-justify th:first-child{
+    padding-left: 0.5em;
+    
+}
+.uk-table-justify td:last-child, .uk-table-justify th:last-child{
+    padding-right: 0.5em;
+    text-align-last: justify;
+}
+/* Final da tela gerenciamento de produtos */
+
+/* Inicio da tela de dúvidas */
+
+.duvida-h1{
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-top: 1em;
+    margin-bottom: -2em;   
+}
+.main-acordeon{
+    height: 77vh;
+}
+
+
+
+/* Final da tela de dúvidas */
+
 /* Inicio do código para tablet */
 
 /* Codigo para header */
@@ -1026,16 +1086,14 @@ footer {
     .side-left{
         /* height: 55vh; */
     }
-    .side-right{
-        height: 55vh;
-    }
+    
     /* final do media query tablet - produto */
     footer .footer-icons{
         padding-right: 15px;
     }
 
     header {
-        padding: 0 30px; 
+        padding: 0 3px; 
     }
 
     footer {
@@ -1051,13 +1109,10 @@ footer {
 /* Inicio do código para mobile */
 @media (max-width: 376px) {
 
-#app-page-produto {
-    height: auto; 
-}
+
     
-.cadastro-btn-cadastro{
-    display: none;
-}
+    
+    
     
     .main-home{
         height: 89vh;
@@ -1079,31 +1134,32 @@ footer {
         justify-content: flex-start;
     }
     .main-produto h1{
-        margin-bottom: 3em;
-        font-size: 1.5em;
+        margin: 0 1.5em 1.4em 1.5em;
+        font-size: 1.3em;
+        text-align: center;
        
     }
     .img-produto{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-bottom: 0;
         align-items: center;
-        margin-bottom: 2.5em;
+        margin-top: 5em;
         width: 100%; 
     }
     .img-principal{
-        height: 26vh;
+        
     }
   
     .img-small{
-        
+        padding: 0;
         flex-direction: row;
         justify-content: center;
     }
 
     .ponto-img{
         display: flex;
-        justify-content: flex-end;
+        margin: 0;
+        
     }
     .descricao-produto{
         width: 70vw;
@@ -1174,6 +1230,15 @@ footer {
 
     .nav-produto{
         background-color: white;
+    }
+    
+    .img-principal img{
+        height: 42vh;
+    }
+
+    .img-small img{
+        height: 15vh;
+
     }
 /* Final do código para pg produtos */
     
@@ -1473,14 +1538,6 @@ header h1 {
     .app-page-produto {
         display: block;
     }
-
-    .main-produto .sup {
-        display: flex; 
-    }
-
-    .main-produto .sup .img-box {
-        width: 100%; 
-    }
 }
 
 @media(min-width: 1000px) {
@@ -1581,9 +1638,6 @@ header h1 {
     .box-margin {
         margin: 0; 
     }
-    #app-page-produto {
-        height: 100vh;
-    }
 }
 
 
@@ -1610,8 +1664,8 @@ header h1 {
     height: auto;
 }
 
-.img-produto {
-    margin-bottom: 4.5em; 
+#main-produto {
+    height: 87%; 
 }
 
 #header-perfil {
@@ -1629,107 +1683,4 @@ header h1 {
 
 .icon-box i {
     color: black; 
-}
-
-#app-page-produto {
-    overflow: auto; 
-}
-
-.main-produto {
-    overflow: auto; 
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.main-produto .thumb-nav img {
-    width: 70px; 
-}
-
-.main-produto .infos-box {
-    margin-top: 30px; 
-    width: 100%; 
-}
-
-.main-produto .infos-box h2 {
-    text-align: center; 
-    font-weight: bolder; 
-    margin: 0; 
-}
-
-.main-produto img {
-    width: 90%; 
-}
-
-.infos-box .filters, .infos-box h3 {
-    font-weight: bolder;
-    font-size: 1rem;
-    margin: 0; 
-    margin-bottom: 5px;   
-}
-
-.infos-box .filters {
-    margin-top: 20px; 
-    padding: 0 30px; 
-}
-
-.infos-box img {
-    width: 50px; 
-}
-
-.infos-box .filter {
-    margin-bottom: 20px; 
-}
-
-.infos-box .show-box {
-    width: 120px;
-    color: white;  
-    border-radius: 5px; 
-    height: 40px; 
-    background-color: #805CFF; 
-}
-
-.infos-box .payment {
-   padding: 0 30px; 
-}
-
-.infos-box .payment #form-stacked-select {
-    width: 100%; 
-}
-
-.main-produto .interest-box {
-    margin-top: 30px; 
-}
-
-.main-produto .sup {
-    width: 100%; 
-}
-
-.main-produto .interest {
-    border-radius: 4px;
-    font-weight: bolder; 
-    padding: 0 20px; 
-    width: 60%; 
-    height: 40px; 
-    background-color: var(--yellow); 
-}
-.tecnical-infos {
-    margin-top: 30px; 
-}
-
-.tecnical-infos .description, .tecnical-infos .tecnical {
-    padding: 0 30px; 
-}
-
-.tecnical-infos  h3{
-    font-weight: bolder; 
-}
-
-.tecnical-infos table tr {
-    font-weight: bolder; 
-    font-size: 0.8rem; 
-}
-
-.tecnical-infos table tr:nth-child(even) {
-    background-color: rgb(212, 212, 212); 
 }
