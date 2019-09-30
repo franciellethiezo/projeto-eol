@@ -1733,3 +1733,55 @@ header h1 {
 .tecnical-infos table tr:nth-child(even) {
     background-color: rgb(212, 212, 212); 
 }
+
+.sup .img-upload-box {
+    padding: 0 30px; 
+    margin-top: 20px; 
+}
+
+.sup .img-upload-box h2 {
+    font-weight: bolder; 
+}
+
+.sup .img-upload-box .js-upload {
+    flex-grow: 1; 
+}
+
+#default-input {
+    border: 1px solid #e5e5e5;
+    border-radius: 0; 
+}
+
+.select-product {
+    margin: 9px 0; 
+}
+
+.save-product {
+    width: 100%; 
+}
+
+.save-product .interest { 
+    height: 60px; 
+    max-width: 350px; 
+    font-size: 1.3em;
+}
+
+.tech-create {
+    width: 100%; 
+}
+
+.tech-create .uk-textarea {
+    height: 150px; 
+}
+
+.tech-create .description {
+    margin-bottom: 20px; 
+}
+
+.tech-create .handle h3 {
+    font-size: 1rem; 
+}
+
+.tech-table-create td {
+    vertical-align: middle;
+}
