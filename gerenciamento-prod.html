@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerenciamento de anúncios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="interface-gerenciamento-prod">
+        <aside class="flex-column-between" id="aside-mobile">
+            <div class="top">
+                <div class="logo flex-center">
+                    <img src="./imgs/logo.png" alt="">
+                    <i class="fas fa-times" onclick="toggleAside()"></i>
+                </div>
+
+                <div class="icons flex-column">
+                    <div class="icon-box flex-center" onclick="toggleAside()">
+                        <i class="fas fa-bullhorn" id="megaphone"></i>
+                    </div>
+                    <div class="icon-box flex-center" onclick="toggleAside()">
+                        <i class="fas fa-heart flex-center"></i>
+                    </div>
+                    <div class="icon-box flex-center">
+                        <i class="far fa-handshake"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom flex-column">
+                <div class="profile flex-center">
+                    <div class="img-profile background-center"></div>
+                </div>
+                <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
+            </div>
+
+        </aside>
+
+        <div class="tabela-produto">
+            <table class="tabela-cadastro-prod uk-table uk-table-justify uk-table-divider">
+                <thead class="flex-around">
+                    <div class="gerenc-prod-menu flex-around">
+                        <nav class="nav-prod-cad">
+                            <a href="./gerenciamento-prod.html"><button class="btn">Ativos</button></a>
+                            <a href="#"><button class="btn-cadastrar-produto">CADASTRAR PRODUTO</button></a>
+                        </nav>
+                    </div>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="img-cad-produto"><img src="./imgs/celofone.png"
+                                alt="Imagem de um celular para a venda" srcset="">Iphone XR</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</td>
+                        <td><a href="#"><img src="./imgs/lapis-icone.png" alt="icone para deletar produto cadastrado" srcset=""></a>
+                        <a href="#"><img src="./imgs/delete-icone.png" alt="icone para alterar produto cadastrado" srcset=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="img-cad-produto"><img src="./imgs/celofone.png"
+                                alt="Imagem de um celular para a venda" srcset="">Iphone XR</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</td>
+                            <td><a href="#"><img src="./imgs/lapis-icone.png" alt="icone para deletar produto cadastrado" srcset=""></a>
+                                <a href="#"><img src="./imgs/delete-icone.png" alt="icone para alterar produto cadastrado" srcset=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="img-cad-produto"><img src="./imgs/celofone.png"
+                                alt="Imagem de um celular para a venda" srcset="">Iphone XR</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</td>
+                            <td><a href="#"><img src="./imgs/lapis-icone.png" alt="icone para deletar produto cadastrado" srcset=""></a>
+                                <a href="#"><img src="./imgs/delete-icone.png" alt="icone para alterar produto cadastrado" srcset=""></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
