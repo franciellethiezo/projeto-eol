@@ -1812,12 +1812,12 @@ header h1 {
     font-weight: bolder; 
 }
 
-.tecnical-infos table tr {
+.tecnical-infos table tr, .tech-table-create table tr {
     font-weight: bolder; 
     font-size: 0.8rem; 
 }
 
-.tecnical-infos table tr:nth-child(even) {
+.tecnical-infos table tr:nth-child(even), .tech-table-create table tr:nth-child(even) {
     background-color: rgb(212, 212, 212); 
 }
 
