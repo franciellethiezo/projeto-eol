@@ -998,12 +998,30 @@ border: 1px solid rgb(58, 58, 58);
 
 .duvida-h1{
     font-weight: bold;
-    font-size: 3.5em;
-    margin-top: 1em;
-    margin-bottom: -2em;   
+    text-align: center; 
 }
 .main-acordeon{
-    height: 77vh;
+    height: 58vh;
+    margin: 0 22em;
+    margin-top: 3em;
+    
+}
+.uk-accordion-title{
+    border: 2px solid #707070;
+    border-radius: 25px;
+    line-height: 2em;
+}
+.uk-accordion-title::before{
+    margin: 0.4em;
+}
+.uk-accordion-content>:last-child{
+    text-align: center;
+}
+.uk-link a{
+    color: #000;
+}
+.uk-accordion-content>:last-child{
+    margin-bottom: 1.5em;
 }
 
 
