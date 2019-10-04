@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Default - CodeXP</title>
+    <title>Cadastro de Produtos</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+    <link href="https://cdn.remixicon.com/releases/v2.0.0/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/generals.css">
@@ -39,14 +40,18 @@
                     <i class="far fa-handshake"></i>
                 </div>
                 <div class="icon-box flex-center">
-                    <i class="fas fa-bell"></i>
+                    <a href="lista-anuncio.html"><i class="ri-file-list-fill"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="bottom flex-column">
             <div class="profile flex-center">
-                <div class="img-profile background-center"></div>
+                <div class="img-profile background-center">
+                    <a href="./profile.html">
+                        <div class="img-profile background-center"></div>
+                    </a>
+                </div>
             </div>
             <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
         </div>
@@ -89,12 +94,12 @@
                             <h3>Titulo do Produto</h3>
                             <input class="uk-input" id="default-input" type="text" placeholder="">
                         </div>
-    
+
                         <div class="payment">
                             <h3>Valor do Produto</h3>
                             <input class="uk-input" id="default-input" type="text" placeholder="">
                         </div>
-    
+
                         <div class="payment select-product">
                             <h3>Marca do Produto</h3>
                             <select class="uk-select select" id="form-stacked-select">
@@ -102,7 +107,7 @@
                                 <option>Option 02</option>
                             </select>
                         </div>
-    
+
                         <div class="payment">
                             <h3>Condição do Produto</h3>
                             <select class="uk-select select" id="form-stacked-select">
