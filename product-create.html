@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default - CodeXP</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/generals.css">
+    <link rel="stylesheet" href="./css/generals-app.css">
+    <link rel="stylesheet" href="./css/app-style.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    
+
+</head>
+
+<body class="web-app">
+    <div class="dark-modal flex-center" id="dark-modal">
+    </div>
+    <aside class="flex-column-between" id="aside-mobile">
+        <div class="top">
+            <div class="logo flex-center">
+                <img src="./imgs/logo.png" alt="">
+                <i class="fas fa-times" onclick="toggleAside()"></i>
+            </div>
+
+            <div class="icons flex-column">
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <i class="fas fa-bullhorn" id="megaphone"></i>
+                </div>
+                <div class="icon-box flex-center" onclick="toggleAside()">
+                    <i class="fas fa-heart flex-center"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="far fa-handshake"></i>
+                </div>
+                <div class="icon-box flex-center">
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom flex-column">
+            <div class="profile flex-center">
+                <div class="img-profile background-center"></div>
+            </div>
+            <img src="./imgs/logo-thoughtworks.png" alt="" class="thought-logo">
+        </div>
+
+    </aside>
+
+    <section class="app-page" id="app-page-produto">
+        <nav class="mobile-nav flex-center">
+            <div class="wrap container flex-between">
+                <div class="hamburger-menu" onclick="toggleAside()">
+                    <div class="line line-0"></div>
+                    <div class="line line-1"></div>
+                    <div class="line"></div>
+                </div>
+                <img class="logo" src="./imgs/logo.png" alt="">
+                <a href="./profile.html"><img src="./imgs/profile-square.png" alt="" class="profile"></a>
+            </div>
+        </nav>
+
+        <main class="main-produto" id="main-produto">
+            <div class="sup">
+                <div class="img-upload-box flex-column">
+                    <h2>Cadastro de Produtos</h2>
+                    <div class="js-upload uk-placeholder uk-text-center flex-center">
+                        <div class="handle">
+                            <span uk-icon="icon: cloud-upload"></span>
+                            <span class="uk-text-middle">Faça o upload de imagens arrastando ou </span>
+                            <div uk-form-custom>
+                                <input type="file" multiple>
+                                <span class="uk-link">selecionando uma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+                </div>
+                <div class="infos-box flex-center">
+                    <div class="handle">
+                        
+                        <div class="payment">
+                            <h3>Titulo do Produto</h3>
+                            <input class="uk-input" id="default-input" type="text" placeholder="">
+                        </div>
+
+                        <div class="payment">
+                            <h3>Valor do Produto</h3>
+                            <input class="uk-input" id="default-input" type="text" placeholder="">
+                        </div>
+
+                        <div class="payment select-product">
+                            <h3>Marca do Produto</h3>
+                            <select class="uk-select select" id="form-stacked-select">
+                                <option>Option 01</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+
+                        <div class="payment">
+                            <h3>Condição do Produto</h3>
+                            <select class="uk-select select" id="form-stacked-select">
+                                <option>Option 01</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="tecnical-infos tech-create">
+                <div class="description">
+                    <h3>Descrição</h3>
+                    <textarea class="uk-textarea"></textarea>
+                </div>
+
+                <div class="tecnical tech-table-create">
+                    <h3>Ficha Técnica</h1>
+                        <table class="uk-table uk-table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>Código</td>
+                                    <td><input class="uk-input" id="default-input" type="text" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Código de Barras</td>
+                                    <td><input class="uk-input" id="default-input" type="text" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Memória Ram</td>
+                                    <td><input class="uk-input" id="default-input" type="text" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Memória Interna</td>
+                                    <td><input class="uk-input" id="default-input" type="text" placeholder=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+
+            <div class="interest-box flex-center save-product">
+                <button class="interest"> Salvar Produto </button>
+            </div>
+        </main>
+    </section>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/b59fd58049.js"></script>
+<script defer src="./js/script.js"></script>
+
+<script>
+    const aside = document.getElementById('aside-mobile');
+    const darkModal = document.getElementById('dark-modal');
+    const filterModal = document.getElementById('filter-modal');
+
+    const toggleAside = () => {
+        darkModal.classList.toggle('show');
+        aside.classList.toggle('aside-show');
+    }
+
+    const toggleFilter = () => {
+        darkModal.classList.toggle('show');
+        filterModal.classList.toggle('show');
+    }
+</script>
+
+<script>
+
+    var bar = document.getElementById('js-progressbar');
+
+    UIkit.upload('.js-upload', {
+
+        url: '',
+        multiple: true,
+
+        beforeSend: function () {
+            console.log('beforeSend', arguments);
+        },
+        beforeAll: function () {
+            console.log('beforeAll', arguments);
+        },
+        load: function () {
+            console.log('load', arguments);
+        },
+        error: function () {
+            console.log('error', arguments);
+        },
+        complete: function () {
+            console.log('complete', arguments);
+        },
+
+        loadStart: function (e) {
+            console.log('loadStart', arguments);
+
+            bar.removeAttribute('hidden');
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        progress: function (e) {
+            console.log('progress', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        loadEnd: function (e) {
+            console.log('loadEnd', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        completeAll: function () {
+            console.log('completeAll', arguments);
+
+            setTimeout(function () {
+                bar.setAttribute('hidden', 'hidden');
+            }, 1000);
+
+            alert('Upload Completed');
+        }
+
+    });
+
+</script>
