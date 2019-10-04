@@ -723,7 +723,6 @@ footer .footer-icons{
 }
 .main-produto{
     /* height: 60vh; */
-    height: 95%;
 
     display: flex;
     flex-direction: row;
@@ -1032,6 +1031,7 @@ border: 1px solid rgb(58, 58, 58);
 
 /* Codigo para header */
 @media (max-width: 768px) {
+
     
     header .logo img {
         width: 11em;
@@ -1120,6 +1120,15 @@ border: 1px solid rgb(58, 58, 58);
 
     .botao-condicao img {
         margin-top: 5px;
+    }
+
+    
+    .sup { 
+        flex-direction: column; 
+    }
+
+    .sup .infos-box  {
+        width: 100%; 
     }
 
 }
@@ -1682,10 +1691,6 @@ header h1 {
     height: auto;
 }
 
-#main-produto {
-    height: 87%; 
-}
-
 #header-perfil {
     width: auto; 
 }
@@ -1720,8 +1725,14 @@ header h1 {
 
 .main-produto .infos-box {
     margin-top: 30px; 
+    flex-grow: 1;
+}
+
+.infos-box .handle {
     width: 100%; 
 }
+
+
 
 .main-produto .infos-box h2 {
     text-align: center; 
@@ -1729,9 +1740,6 @@ header h1 {
     margin: 0; 
 }
 
-.main-produto img {
-    width: 90%; 
-}
 
 .infos-box .filters, .infos-box h3 {
     font-weight: bolder;
@@ -1809,6 +1817,7 @@ header h1 {
 .sup .img-upload-box {
     padding: 0 30px; 
     margin-top: 20px; 
+    flex-grow: 1;
 }
 
 .sup .img-upload-box h2 {
@@ -1836,6 +1845,7 @@ header h1 {
     height: 60px; 
     max-width: 350px; 
     font-size: 1.3em;
+    margin-bottom: 30px; 
 }
 
 .tech-create {
