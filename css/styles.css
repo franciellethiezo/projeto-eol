@@ -1029,10 +1029,18 @@ border: 1px solid rgb(58, 58, 58);
 .ul-accordion {
     list-style-type: none;
 }
-
-
-
 /* Final da tela de dúvidas */
+
+
+
+/* Inicio da tela de listar produtos */
+.sup{
+    flex-direction: column;
+    width: 30em;
+}
+/* Final da tela de listar produtos */
+
+
 
 /* Inicio do código para tablet */
 
