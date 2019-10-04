@@ -1023,6 +1023,13 @@ border: 1px solid rgb(58, 58, 58);
 .uk-accordion-content>:last-child{
     margin-bottom: 1.5em;
 }
+.h2-duvidas-acord{
+    margin: 0;
+    margin-left: 0.5em;
+}
+.ul-accordion {
+    list-style-type: none;
+}
 
 
 
