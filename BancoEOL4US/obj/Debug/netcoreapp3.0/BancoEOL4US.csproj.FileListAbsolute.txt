@@ -53,3 +53,5 @@ C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\obj\Debug\netcoreapp3.0\Banc
 C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\obj\Debug\netcoreapp3.0\BancoEOL4US.csproj.CopyComplete
 C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\obj\Debug\netcoreapp3.0\BancoEOL4US.dll
 C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\obj\Debug\netcoreapp3.0\BancoEOL4US.pdb
+C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\bin\Debug\netcoreapp3.0\BancoEOL4US.xml
+C:\Users\fic\Desktop\EOL4US\projeto-eol\BancoEOL4US\obj\Debug\netcoreapp3.0\BancoEOL4US.xml

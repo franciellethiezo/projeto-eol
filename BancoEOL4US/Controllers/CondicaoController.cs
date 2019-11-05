@@ -15,6 +15,10 @@ namespace BancoEOL4US.Controllers
     {
         CondicaoRepositorio repositorio = new CondicaoRepositorio();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<List<Condicao>>> Get()
         {
@@ -35,8 +39,12 @@ namespace BancoEOL4US.Controllers
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
         [HttpGet("{id}")]
-
         public async Task<ActionResult<Condicao>> Get(int id)
         {
             try
@@ -55,6 +63,11 @@ namespace BancoEOL4US.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="condicao"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Condicao>> Post(Condicao condicao)
         {
@@ -69,6 +82,12 @@ namespace BancoEOL4US.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="condicao"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Condicao>> Put(int id, Condicao condicao)
         {
@@ -95,6 +114,11 @@ namespace BancoEOL4US.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<Condicao>> Delete(int id)
         {

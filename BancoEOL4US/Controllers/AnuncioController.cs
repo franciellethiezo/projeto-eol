@@ -15,8 +15,12 @@ namespace BancoEOL4US.Controllers
     {
         AnuncioRepositorio anunciorepositorio = new AnuncioRepositorio();
         
+        /// <summary>
+        /// Listagem de todos os anúncios
+        /// </summary>
+        /// 
+        /// <returns>Retorna ao usuário uma lista com todos anúncios</returns>
         [HttpGet]
-
         public async Task<ActionResult<List<Anuncio>>> Get()
         {
           try
@@ -41,8 +45,12 @@ namespace BancoEOL4US.Controllers
           }
         }
         
+        /// <summary>
+        /// Filtro de preço
+        /// </summary>
+        /// <param name="preco"> Parâmetro recebe o valor de preço </param>
+        /// <returns>Retorna ao usuário lista de anúncios com o preço informado</returns>
         [HttpGet ("buscapreco/{preco}")]
-
         public async Task<ActionResult<List<Anuncio>>> Get ( int preco)
         {
             try
@@ -56,23 +64,13 @@ namespace BancoEOL4US.Controllers
             }
         }
 
-        // [HttpGet ("buscaCondicao/{condicao}")]
-
-        // public async Task<ActionResult<List<Anuncio>>> Get (string condicao)
-        // {
-        //     try
-        //     {
-        //         List<Anuncio> anuncioRetornado = await anunciorepositorio.BuscaPorCondicao(condicao);
-        //         return anuncioRetornado;
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         throw ex;
-        //     }
-        // }
-
-        [HttpGet ("buscaCondicao/{marca}%{estado}")]
-
+        /// <summary>
+        /// Filtro de condição e marca
+        /// </summary>
+        /// <param name="marca"> Parâmetro recebe as marcas</param>
+        /// <param name="estado"> Parâmetro recebe o estado(condição)</param>
+        /// <returns>Retorna ao usuário os anúncios com os parâmetros de marca e estado informados</returns>
+        [HttpGet ("buscaCondicao/{marca}/{estado}")]
         public async Task<ActionResult<List<Anuncio>>> BuscaPorMarcaEstado (string marca, string estado)
         {
             try
@@ -86,12 +84,7 @@ namespace BancoEOL4US.Controllers
             }
         }
 
-
-
-
-
-        [HttpPost]
-
+        [HttpPost]    
         public async Task<ActionResult<Anuncio>> Post (Anuncio anuncio)
         {
             try
@@ -104,8 +97,7 @@ namespace BancoEOL4US.Controllers
             }
         }
         
-        [HttpPut ("{id}")]
-    
+        [HttpPut ("{id}")] 
         public async Task<ActionResult<Anuncio>> Put(int id, Anuncio anuncio)
         {
             if (id != anuncio.IdAnuncio)
@@ -131,7 +123,6 @@ namespace BancoEOL4US.Controllers
         }
 
         [HttpDelete("{id}")]
-
         public async Task<ActionResult<Anuncio>> Delete (int id)
         {
             try

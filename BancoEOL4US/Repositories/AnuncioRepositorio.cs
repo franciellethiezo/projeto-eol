@@ -43,32 +43,19 @@ namespace BancoEOL4US.Repositories
                 return await context.Anuncio.Include(c => c.FkIdCondicaoNavigation).Include(p => p.FkIdProduto).FirstOrDefaultAsync(a => a.IdAnuncio == id);
             }
         }
-
+        
         public async Task<List<Anuncio>> BuscaPorPreco(int preco)
         {
             List<Anuncio> anuncios = await context.Anuncio.Where(anu => anu.PrecoAnuncio >= preco).ToListAsync();
             return anuncios;
         }
 
-        // public async Task<List<Anuncio>> BuscaPorCondicao(string condicao)
-        // {
-        //     var kk = await (
-        //         from a in context.Anuncio join c in context.Condicao on a.FkIdCondicao equals c.IdCondicao
-        //             where c.AvaliacaoCondicao == condicao
-        //             select new{
-        //                 condition = c.AvaliacaoCondicao,
-        //                 IDC = c.IdCondicao
-        //             }
-        //     ).ToListAsync();
-
-        //     return "kk";
-        // }
-
         public async Task<List<Anuncio>> BuscaPorMarcaCondicao(string categoria, string condicaoRecebida)
         {
-            Condicao condicao = await context.Condicao.Where(c => c.AvaliacaoCondicao == condicaoRecebida).FirstOrDefaultAsync();
+            // Condicao condicao = await context.Condicao.Where(c => c.AvaliacaoCondicao == condicaoRecebida).FirstOrDefaultAsync();
 
-            List<Anuncio> listaAnuncio = await context.Anuncio.Where(c => c.FkIdCondicao == condicao.IdCondicao).ToListAsync();
+            List<Anuncio> listaAnuncio = await context.Anuncio.Where(c => c.FkIdCondicaoNavigation.AvaliacaoCondicao == condicaoRecebida &&
+             c.FkIdProdutoNavigation.FkIdCategoriaNavigation.MarcaCategoria == categoria).ToListAsync();
 
             return listaAnuncio;
         }

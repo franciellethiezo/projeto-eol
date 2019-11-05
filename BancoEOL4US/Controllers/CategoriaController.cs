@@ -15,6 +15,10 @@ namespace BancoEOL4US.Controllers
     {
         CategoriaRepositorio categoriarespositorio = new CategoriaRepositorio();
 
+        /// <summary>
+        /// Listagem de todas as categorias
+        /// </summary>
+        /// <returns>Retorna ao usuário uma lista com todas as categorias </returns>
         [HttpGet]
         public async Task<ActionResult<List<Categoria>>> Get()
         {
@@ -36,7 +40,11 @@ namespace BancoEOL4US.Controllers
             }
 
         }
-
+        /// <summary>
+        /// Lista de categoria específica
+        /// </summary>
+        /// <param name="id">Recebe o id da categoria informada</param>
+        /// <returns>Retorna ao usuário as inormações da característica informada</returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> Get(int id)
         {
@@ -58,8 +66,13 @@ namespace BancoEOL4US.Controllers
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Incusão de nova categoria
+        /// </summary>
+        /// <param name="categoria"> Parâmetro recebe uma nova categoria</param>
+        /// <returns> Retorna ao usuário os campos para criar uma nova categoria </returns>
         [HttpPost]
+
         public async Task<ActionResult<Categoria>> Post(Categoria categoria)
         {
             try
@@ -73,6 +86,12 @@ namespace BancoEOL4US.Controllers
             }
         }
 
+        /// <summary>
+        /// Alteração de anúncio específico
+        /// </summary>
+        /// <param name="id"> Recebe o id específico de uma categoria </param>
+        /// <param name="categoria"> Recebe as informações que serão alteradas</param>
+        /// <returns>Retorna ao usuário os campos para alteração de uma categoria</returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Categoria>> Put(int id, Categoria categoria)
         {
@@ -99,10 +118,15 @@ namespace BancoEOL4US.Controllers
                     throw;
                 }
             }
-            
-        }
 
+        }
+        /// <summary>
+        /// Deleta uma categoria
+        /// </summary>
+        /// <param name="id"> Recebe o id da categoria que será deletada </param>
+        /// <returns>Retorna ao usuário a informação de exclusão</returns>
         [HttpDelete("{id}")]
+
         public async Task<ActionResult<Categoria>> Delete(int id)
         {
             try
