@@ -479,7 +479,7 @@ aside .thought-logo {
 .btn {
     background: none;
     border: none;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .purple {
@@ -518,6 +518,7 @@ header {
 header .logo {
     height: 100%;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 header .logo img {
@@ -695,6 +696,93 @@ footer .footer-icons {
     font-size: 1.70em;
     padding-right: 15px;
 }
+
+/* inicio da tela de como funciona*/
+.comoFuncionaTituloH1{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.comoFuncionaTituloH2{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1150px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  padding-top: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: gray;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* final da tela de como funciona */
 
 /* inicio do código para desktop - produtos */
 
@@ -1221,6 +1309,14 @@ footer {
     .img-box-produto {
         padding: 0 10px; 
     }
+
+    /*Inicio do media query tablet - Como Funciona*/
+    .slideshow-container {
+        max-width: 700px;
+    }
+
+
+    /*Final do media query tablet - Como Funciona*/
 }
 
 /* Inicio do código para mobile */
@@ -1397,7 +1493,20 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    /*Inicio do media query mobile - Como funciona*/
+    main{
+        height: 76vh;
+    }
+    .mySlides {
+        padding-top: 50px;
+    }
+    .comoFuncionaTituloH2{
+        text-align: justify;
+        text-align-last: center;
+        margin: 0 6px 0 6px;
+    }
 
+    /*Final do media query mobile - Como funciona*/
     
 }
 
