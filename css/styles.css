@@ -700,9 +700,8 @@ footer .footer-icons {
 /* inicio da tela de como funciona*/
 .comoFuncionaTituloH1{
     display: flex;
-    padding-top: 40px;
     justify-content: center;
-    font-weight: 400;
+    padding-top: 10px; 
 }
 
 .comoFuncionaTituloH2{
@@ -1088,9 +1087,9 @@ footer {
 /* Inicio da tela de dúvidas */
 
 .duvida-h1 {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; 
 }
 
 .accordion:after {
@@ -1136,6 +1135,27 @@ footer {
   }
 
 /* Final da tela de dúvidas */
+
+/* Inicio da tela de sobre nós*/
+.sobre-nos-h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+.sobre-nos-h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 15px;
+    text-align: justify;
+}
+.sobre-nos-secao {
+    display: flex;
+
+}
+
+
+/* Final da tela de sobre nós*/
 
 /* Inicio da tela de listar produtos */
 
