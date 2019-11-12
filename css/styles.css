@@ -1090,44 +1090,50 @@ footer {
 .duvida-h1 {
     font-weight: bold;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.main-acordeon {
-    height: 62vh;
-    margin: 0 22em;
-    margin-top: 3em;
-}
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .ative:after {
+    content: "\2796";
+  }
 
-.uk-accordion-title {
-    border: 2px solid #707070;
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.4s;
     border-radius: 25px;
-    line-height: 2em;
-}
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: 140px; 
+    
+  }
 
-.uk-accordion-title::before {
-    margin: 0.4em;
-}
-
-.uk-accordion-content>:last-child {
-    text-align: center;
-}
-
-.uk-link a {
-    color: #000;
-}
-
-.uk-accordion-content>:last-child {
-    margin-bottom: 1.5em;
-}
-
-.h2-duvidas-acord {
-    margin: 0;
-    margin-left: 0.5em;
-}
-
-.ul-accordion {
-    list-style-type: none;
-}
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 /* Final da tela de dúvidas */
 
@@ -1314,9 +1320,17 @@ footer {
     .slideshow-container {
         max-width: 700px;
     }
-
-
     /*Final do media query tablet - Como Funciona*/
+
+    /*Inicio do media query tablet - Dúvidas*/
+    .accordion{
+        margin-left: 75px;
+    }
+    .duvida-h1{
+        margin-bottom: 10px;
+    }
+
+    /*Final do media query tablet - Dúvidas*/
 }
 
 /* Inicio do código para mobile */
@@ -1507,6 +1521,13 @@ footer {
     }
 
     /*Final do media query mobile - Como funciona*/
+
+    /*Inicio do media query mobile - Dúvidas*/
+    .accordion{
+        margin-left: 30px;
+    }
+
+    /*Final do media query mobile - Dúvidas*/
     
 }
 
