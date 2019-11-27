@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dúvidas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/profile.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script defer src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/b59fd58049.js"></script>
 </head>
 
@@ -19,44 +18,44 @@
             <a href="./home.html"><img src="./imgs/Logo Oficial.png" alt="logo"></a>
         </div>
         <nav class="flex-center">
-            <a href="#"><button class="btn">Sobre nós</button></a>
-            <a href="#"><button class="btn">Como funciona?</button></a>
-            <a href="#"><button class="btn">Dúvidas</button></a>
-            <a href="#"><button class="btn cadastro-btn-cadastro" id="btn-cadastro">Cadastro</button></a>
+            <a href="./sobre-nos.html"><button class="btn">Sobre nós</button></a>
+            <a href="./como-funciona.html"><button class="btn">Como funciona?</button></a>
+            <a href="./duvidas.html"><button class="btn">Dúvidas</button></a>
+            <a href="./cadastro-caixa.html"><button class="btn cadastro-btn-cadastro"
+                    id="btn-cadastro">Cadastro</button></a>
         </nav>
     </header>
-    <h1 class="duvida-h1 ">Dúvidas</h1>
-    <main class="main-acordeon">
-        <ul uk-accordion class="ul-accordion">
-            <li class="uk-open">
-                <a class="uk-accordion-title" href="#">
-                    <h2 class="h2-duvidas-acord">A minha compra é garantida?</h2>
-                </a>
-                <div class="uk-accordion-content">
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                        repudiandae aperiam facere</p> -->
+    <main>
+        <h1 class="duvida-h1 ">Dúvidas</h1>
+
+        <div class="accordionWrapper">
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">A minha compra é garantida?</h2>
+                <div class="accordionItemContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem consectetur odit
+                        recusandae modi, assumenda voluptate eos dolores veniam voluptates? Ea ullam doloribus vel rem
+                        nostrum.</p>
                 </div>
-            </li>
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    <h2 class="h2-duvidas-acord"> Quais as formas de pagamento?</h2>
-                </a>
-                <div class="uk-accordion-content">
-                    <!-- <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor reprehenderit.</p> -->
+            </div>
+
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Quais as formas de pagamento?</h2>
+                <div class="accordionItemContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem consectetur odit
+                        recusandae modi, assumenda voluptate eos dolores veniam voluptates? Ea ullam doloribus vel rem
+                        nostrum.</p>
                 </div>
-            </li>
-            <li>
-                <a class="uk-accordion-title" href="#">
-                    <h2 class="h2-duvidas-acord">Como o produto será entregue</h2>
-                </a>
-                <div class="uk-accordion-content">
-                    <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat proident.</p> -->
+            </div>
+
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Como o produto será entregue?</h2>
+                <div class="accordionItemContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem consectetur odit
+                        recusandae modi, assumenda voluptate eos dolores veniam voluptates? Ea ullam doloribus vel rem
+                        nostrum.</p>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </main>
     <footer class="flex-between">
         <img class="flex-between" src="./imgs/logo-thoughtworks.png" alt="">
@@ -70,9 +69,6 @@
             </div>
         </div>
     </footer>
-
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.1/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.1/js/uikit-icons.min.js"></script>
 
 </html>

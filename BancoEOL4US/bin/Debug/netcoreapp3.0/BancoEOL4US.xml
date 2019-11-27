@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BancoEOL4US</name>
+    </assembly>
+    <members>
+        <member name="M:BancoEOL4US.Controllers.AnuncioController.Get">
+            <summary>
+            Listagem de todos os anúncios
+            </summary>
+            
+            <returns>Retorna ao usuário uma lista com todos anúncios</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.AnuncioController.Get(System.Int32)">
+            <summary>
+            Filtro de preço
+            </summary>
+            <param name="preco"> Parâmetro recebe o valor de preço </param>
+            <returns>Retorna ao usuário lista de anúncios com o preço informado</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.AnuncioController.BuscaPorMarcaEstado(System.String,System.String)">
+            <summary>
+            Filtro de condição e marca
+            </summary>
+            <param name="marca"> Parâmetro recebe as marcas</param>
+            <param name="estado"> Parâmetro recebe o estado(condição)</param>
+            <returns>Retorna ao usuário os anúncios com os parâmetros de marca e estado informados</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CategoriaController.Get">
+            <summary>
+            Listagem de todas as categorias
+            </summary>
+            <returns>Retorna ao usuário uma lista com todas as categorias </returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CategoriaController.Get(System.Int32)">
+            <summary>
+            Lista de categoria específica
+            </summary>
+            <param name="id">Recebe o id da categoria informada</param>
+            <returns>Retorna ao usuário as inormações da característica informada</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CategoriaController.Post(BancoEOL4US.Models.Categoria)">
+            <summary>
+            Incusão de nova categoria
+            </summary>
+            <param name="categoria"> Parâmetro recebe uma nova categoria</param>
+            <returns> Retorna ao usuário os campos para criar uma nova categoria </returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CategoriaController.Put(System.Int32,BancoEOL4US.Models.Categoria)">
+            <summary>
+            Alteração de anúncio específico
+            </summary>
+            <param name="id"> Recebe o id específico de uma categoria </param>
+            <param name="categoria"> Recebe as informações que serão alteradas</param>
+            <returns>Retorna ao usuário os campos para alteração de uma categoria</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CategoriaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma categoria
+            </summary>
+            <param name="id"> Recebe o id da categoria que será deletada </param>
+            <returns>Retorna ao usuário a informação de exclusão</returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CondicaoController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CondicaoController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CondicaoController.Post(BancoEOL4US.Models.Condicao)">
+            <summary>
+            
+            </summary>
+            <param name="condicao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CondicaoController.Put(System.Int32,BancoEOL4US.Models.Condicao)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="condicao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoEOL4US.Controllers.CondicaoController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
